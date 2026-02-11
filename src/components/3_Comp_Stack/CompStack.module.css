@@ -1,0 +1,22 @@
+.iconbig {
+    height: 48px;
+    background: var(--darkGray);
+}
+
+.iconxs {
+    height: 24px;
+   
+}
+
+.iconcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    height: 128px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: var(--darkGray);
+    gap: 8px;
+
+}
