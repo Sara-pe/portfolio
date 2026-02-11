@@ -4,7 +4,7 @@ import './App.css'
 import { CompIntro } from './components/1_Comp_Intro/CompIntro'
 import { CompAbout } from './components/2_Comp_About/CompAbout'
 import { CompStack } from './components/3_Comp_Stack/CompStack'
-import { Projects } from './components/4_Comp_Projects/CompProjects'
+import { CompProjects } from './components/4_Comp_Projects/CompProjects'
 
 import LogoIcon from './assets/placeholder-logo.svg';
 
@@ -49,7 +49,7 @@ function App() {
           <CompIntro />
           <CompAbout />
           <CompStack />
-          <Projects />
+          <CompProjects />
         </main>
 
         <footer className='flex flex-col gap-88'>
