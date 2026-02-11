@@ -23,7 +23,7 @@ export const CompProjects = () => {
         {
             id: 1,
             title: "Werewolves Assistant",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.",
+            description: "A game assistant that serves as a guide for the game master. It organizes the different stages of the game, helping the master follow each step correctly, while also allowing them to track votes and eliminations. Based on the remaining players, it determines when the game ends and which team is the winner. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
             tags: ["CSS", "HTML", "JavaScript"],
             linkGit: "https://github.com/Sara-pe/Loup-Garou-Assistant",
             linkWeb: "",
@@ -35,7 +35,7 @@ export const CompProjects = () => {
         {
             id: 2,
             title: "PayGap",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.",
+            description: "A tool that helps you calculate whether your salary is below or above the average, based on your profession and experience level (junior, medior, senior). The platform is designed to help women gain clarity about what they should be earning and to address the gender pay gap of 20%. The website also provides a step-by-step written tutorial on how to request a raise, as well as additional resources such as unions and books to continue seeking guidance.",
             tags: ["CSS", "HTML", "JavaScript", "Php"],
             linkGit: "https://github.com/sahardel92/PayGapHackathon",
             linkWeb: "",
@@ -46,7 +46,7 @@ export const CompProjects = () => {
          {
             id: 3,
             title: "Portfolio",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.",
+            description: "A portfolio website fully built in React, featuring a detailed presentation and in-depth explanation of recent projects, professional experience, and contact resources.",
             tags: ["CSS", "HTML", "JavaScript", "React"],
             linkGit: "https://github.com/Sara-pe/portfolio",
             linkWeb: "",

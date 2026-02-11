@@ -34,8 +34,10 @@ export const CompAbout = () => {
                 {activeSection === "edu" &&
                     <EduCard />}
 
+                <a href="/cv/cv_green.pdf" download>
                 <button className='btn-sec'>Download CV</button>
-            </div>
+            </a>
+        </div >
         </>
     );
 }
