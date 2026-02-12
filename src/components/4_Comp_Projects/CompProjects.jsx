@@ -15,6 +15,7 @@ import IconPrev from '../../assets/left.svg'
 
 import WorkImage1 from "../../assets/Portfolio_images/wa.png";
 import WorkImage2 from "../../assets/Portfolio_images/pg.png";
+import WorkImage3 from "../../assets/Portfolio_images/portfolio.png";
 
 
 export const CompProjects = () => {
@@ -23,7 +24,8 @@ export const CompProjects = () => {
         {
             id: 1,
             title: "Werewolves Assistant",
-            description: "A game assistant that serves as a guide for the game master. It organizes the different stages of the game, helping the master follow each step correctly, while also allowing them to track votes and eliminations. Based on the remaining players, it determines when the game ends and which team is the winner. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
+            description: "A game assistant that serves as a guide for the game master. It organizes the different stages of the game, helping the master follow each step correctly.",
+            extra: "It tracks votes and eliminations, and determines the game's end and winning team. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
             tags: ["CSS", "HTML", "JavaScript"],
             linkGit: "https://github.com/Sara-pe/Loup-Garou-Assistant",
             linkWeb: "",
@@ -35,7 +37,8 @@ export const CompProjects = () => {
         {
             id: 2,
             title: "PayGap",
-            description: "A tool that helps you calculate whether your salary is below or above the average, based on your profession and experience level (junior, medior, senior). The platform is designed to help women gain clarity about what they should be earning and to address the gender pay gap of 20%. The website also provides a step-by-step written tutorial on how to request a raise, as well as additional resources such as unions and books to continue seeking guidance.",
+            description: "A tool that helps you calculate whether your salary is below or above the average, based on your profession and experience level.",
+            extra: "The platform is designed to help women gain clarity about what they should be earning and to address the gender pay gap of 20%. The website also provides a step-by-step written tutorial on how to request a raise, as well as additional external resources.",
             tags: ["CSS", "HTML", "JavaScript", "Php"],
             linkGit: "https://github.com/sahardel92/PayGapHackathon",
             linkWeb: "",
@@ -47,10 +50,11 @@ export const CompProjects = () => {
             id: 3,
             title: "Portfolio",
             description: "A portfolio website fully built in React, featuring a detailed presentation and in-depth explanation of recent projects, professional experience, and contact resources.",
+            extra:"",
             tags: ["CSS", "HTML", "JavaScript", "React"],
             linkGit: "https://github.com/Sara-pe/portfolio",
             linkWeb: "",
-            img: ""
+            img: WorkImage3
            
         }
     ];
@@ -61,7 +65,7 @@ export const CompProjects = () => {
 
     return (
         <>
-            <div className='flex flex-col gap-44 items-center'>
+            <div className='flex flex-col gap-44 items-center max-width'>
                 <div className='flex flex-col gap-64'>
                     <div className='flex flex-row items-center justify-btw'>
                         <h2>Projects</h2>

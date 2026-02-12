@@ -2,9 +2,9 @@
 import style from './CompIntro.module.css';
 import LocationIcon from '../../assets/Vector.svg';
 
-export const CompIntro = () => {
+export const CompIntro = (props) => {
 
-
+const { onFormVisible } = props;
 
     return (
         <>
@@ -24,7 +24,7 @@ export const CompIntro = () => {
                     </div>
 
                     <div className='line'></div>
-                    <button className='btn-prin'>Let's Talk</button>
+                    <button onClick={()=>onFormVisible()} className='btn-prin'>Let's Talk</button>
                 </div>
             </div>
 

@@ -7,7 +7,7 @@ import IconGreen from '../../assets/lucide_dot.svg';
 export const ProjectCard = (props) => {
 
     const { project } = props
-    const { id, title, description, tags, linkGit, linkWeb, img } = project;
+    const { id, title, description, extra, tags, linkGit, linkWeb, img } = project;
 
     return (
         <>
@@ -18,8 +18,9 @@ export const ProjectCard = (props) => {
                 <div className={`flex flex-col justify-start items-start gap-20 ${style.info}`}>
 
                     <h2>{title}</h2>
-                    <p className='gray'>{description}</p>
-                    <div className='flex flex-row flex-wrap gap-8 justify-start'>
+                    <p className='gray'>{description} <br/> {extra}</p>
+                   
+                    <div className={`flex flex-row flex-wrap gap-8 justify-start ${style.tags}`}>
 
                         {
                             tags.map((tag, index) => (<p key={index} className={style.tag}>{tag}</p>))

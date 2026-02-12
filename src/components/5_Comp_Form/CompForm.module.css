@@ -35,8 +35,45 @@ font-family: 'MyFont';
     width: 640px;
 }
 
-.box {
+
+
+.header {
+    margin-bottom: 20px;
+}
+
+span {
+    color: var(--gray);
+}
+
+.close {
+    height: 24px;
+    width: auto;
+    position: absolute; 
+     top: 20px;
+  right: 30px;
+}
+
+.modalBackground {
+
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+   z-index: 1000; 
+  overflow: hidden; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.modal {
     width: 90%;
+    height: 94%;
     display: flex;
 padding: 80px 160px;
 flex-direction: column;
@@ -46,9 +83,20 @@ align-items: center;
 border-radius: 32px;
 border: 1px solid var(--Gray, #8A8A8A);
 background: var(--DarkGray, #121212);
+position: relative; 
+ overflow-y: auto; 
 
+  animation: slideDown 0.8s ease forwards;
 }
 
-.header {
-    margin-bottom: 20px;
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
