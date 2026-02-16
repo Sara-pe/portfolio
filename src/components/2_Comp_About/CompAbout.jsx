@@ -16,7 +16,7 @@ export const CompAbout = () => {
     return (
         <>
             <div className='flex flex-col gap-64'>
-                <div className='flex flex-row gap-64'>
+                <div className='flex flex-row gap-64 flex-col-md items-start-md gap-8-md'>
                     <button className={
                         style.headerButton + ' ' +
                         (activeSection === "exp" ? style.green : '')
@@ -25,7 +25,7 @@ export const CompAbout = () => {
                         style.headerButton + ' ' +
                         (activeSection === "edu" ? style.green : '')
                     } onClick={() => { setActiveSection("edu") }}>   <h2>My education</h2> </button>
-                    <h2>Soft skills</h2>
+               {/*     <h2>Soft skills</h2> */}
                 </div>
                 {
                     activeSection === "exp" &&

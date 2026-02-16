@@ -64,7 +64,24 @@ export const CompProjects = () => {
 
     const [idVisible, setIdVisible] = useState(1)
 
+const [touchStart, setTouchStart] = useState(0);
 
+    const handleTouchStart = (e) => {
+        setTouchStart(e.touches[0].clientX);
+    };
+
+    const handleTouchEnd = (e) => {
+        const touchEnd = e.changedTouches[0].clientX;
+        
+        if (touchStart - touchEnd > 50) {
+            // Swipe izquierda → siguiente
+            setIdVisible(prev => (prev % projects.length) + 1);
+        }
+        if (touchStart - touchEnd < -50) {
+            // Swipe derecha → anterior
+            setIdVisible(prev => (prev - 2 + projects.length) % projects.length + 1);
+        }
+    };
 
     return (
         <>
@@ -73,7 +90,7 @@ export const CompProjects = () => {
                     <div className='flex flex-row items-center justify-btw'>
                         <h2>Projects</h2>
                         <div className='line'></div>
-                        <div className='flex flex-row gap'>
+                        <div className={style.carrouselHeader}>
                             <img className={style.iconxs} src={Logo1} />
                             <img className={style.iconxs} src={IconGreen} />
                             <img className={style.iconxs} src={Logo2} />
@@ -85,7 +102,7 @@ export const CompProjects = () => {
 
 
 
-                    {/* Carousel */}
+                    {/* CARROUSEL PROJECTS */}
                     <div className={style.carouselWrapper}>
 
                         <button onClick={() => { setIdVisible(prev => (prev - 2 + projects.length) % projects.length + 1) }}>
@@ -93,17 +110,21 @@ export const CompProjects = () => {
                                 <img src={IconPrev} alt="Previous" />
                             </div>
                         </button>
-                        <div className={style.carouselTrack}>
+                 <div 
+    className={style.carouselTrack}
+    onTouchStart={handleTouchStart}
+    onTouchEnd={handleTouchEnd}
+>
+   
 
-                            {/* Carrousel only one visible */}
+                            {/* Carrousel style: only one visible */}
                             {/*     {
 
                                 projects.map(project => project.id === idVisible && <ProjectCard key={project.id} project={project} />)
                             }  */}
 
-                            {/* Carrousel peek */}
-
-                            {projects.map((project) => (
+                            {/* Carrousel style: peek with swipe for phone */}
+                         {projects.map((project) => (
                                 <ProjectCard
                                     key={project.id}
                                     project={project}

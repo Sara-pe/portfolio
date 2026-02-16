@@ -29,7 +29,7 @@ export const CompStack = () => {
                 <div className='flex flex-row items-center justify-btw'>
                 <h2>My stack</h2>
                 <div className='line'></div>
-                <div>
+                <div className={style.carrouselStack}>
                     <img className={style.iconxs} src={Icon10} alt="JavaScript" />
                     <img className={style.iconxs} src={IconGreen} alt="dot" />
                     <img className={style.iconxs} src={Icon13} alt="React" />

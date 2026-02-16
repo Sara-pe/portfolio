@@ -26,8 +26,7 @@ function App() {
     <>
       <div className='page flex flex-col items-center justify-center max-width'>
         <nav>
-          <div className='flex flex-row justify-btw items-center gap-8'>
-
+        
             <div className='flex flex-row items-center'>
               <img className="logo-nav" src={LogoIcon} alt="Logo" />
               <p>Sp</p>
@@ -47,10 +46,10 @@ function App() {
 
               <button  onClick={() => setFormVisible(true)} className='btn-contact'>Contact me</button>
             </div>
-          </div>
+         
         </nav>
 
-        <main className='flex flex-col gap-264'>
+        <main className='flex flex-col gap-264 gap-140-md'>
           <div id="intro"><CompIntro onFormVisible={() => setFormVisible(true)} /></div>
           <div id="about"><CompAbout /></div>
           <div id="stack"><CompStack /></div>
@@ -58,17 +57,16 @@ function App() {
         {formVisible && <div><CompForm onClose={() => setFormVisible(false)}/></div>}
         </main>
 
-        <footer className='flex flex-col gap-88'>
-          <div className='flex flex-row justify-btw items-center'>
+        <footer className='flex flex-col gap-88 items-start-md '>
+          <div className='flex flex-row justify-btw items-center flex-col-md gap-32-md items-start-md'>
             <h1>Let's Work Together</h1>
             <div className='line'></div>
             <button 
            onClick={() => setFormVisible(true)} className='btn-prin'>Let's Talk</button>
           </div>
 
-
-          <div className='flex flex-row justify-btw items-center'>
-            <div className='flex flex-row justify-start items-center'>
+          <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md items-start-md'>
+            <div className='flex flex-row justify-start items-center items-start-md'>
               <a href="https://github.com/Sara-pe">
 
                 <svg

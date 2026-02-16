@@ -12,7 +12,7 @@ export const ExpCard = () => {
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
-            <div className='flex flex-row'>
+            <div className='flex flex-row flex-col-md'>
                 <h4>Gallery Registrar</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
                 <h4 className="gray">Xavier Hufkens Gallery, Brussels BE</h4>
@@ -27,7 +27,7 @@ export const ExpCard = () => {
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
-            <div className='flex flex-row'>
+            <div className='flex flex-row flex-col-md'>
                 <h4>Communication & Graphic Design Lead</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
                 <h4 className="gray">Gleam Gallery - FYBO SPRL, Brussels BE</h4>
@@ -42,7 +42,7 @@ export const ExpCard = () => {
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
-            <div className='flex flex-row'>
+            <div className='flex flex-row flex-col-md'>
                 <h4>Gallery Assistant Internship</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
                 <h4 className="gray">Office Baroque Gallery, Brussels BE</h4>

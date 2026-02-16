@@ -20,9 +20,12 @@
  
 }
 
+
+
 html {
   scroll-behavior: smooth;
 }
+
 
 body {
     overflow-x: hidden;
@@ -31,15 +34,20 @@ body {
    
 }
 
+
 .page {
   margin: 48px auto;
   width: 100%;
+ 
     
 }
 
 #root {
-  /* width: 85%; */
+
+  width: 85%;  /* ← Descomentar esto */
   margin: auto;
+  max-width: 100%; /* ← Añade esto */
+
 }
 
 h1 {
@@ -64,6 +72,13 @@ h3 {
 
 
 h4 {
+   font-weight: 500;
+
+  font-size: 22px;
+  letter-spacing: -1.1px;
+}
+
+h5 { /*intro subtitle */
    font-weight: 500;
 
   font-size: 22px;
@@ -183,7 +198,16 @@ p {
 }
 
 nav {
-    width: 100%;
+
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 8px;
+ flex-wrap: wrap;
+width: 100%;
+    overflow-x: hidden; /* ← Añade esto */
 }
 
 button {
@@ -318,24 +342,142 @@ a:hover .icon {
  width: 100%; 
 }
 
-@media (max-width: 700px) {
-.flex-row {
-   flex-direction: column;
+
+
+/* -----------------------------------------*/
+/* -------Responsive Phone version----------*/
+/* -----------------------------------------*/
+
+
+@media (max-width: 768px) {
+
+
+
+    #root {
+    width: 100%; 
+  }
+
+.page {
+  margin: 48px 20px;
+    
 }
 
-.justify-start {
-  justify-content: center;
-}
+  .items-start-md {
+    align-items: flex-start;
+  }
 
-.justify-btw {
-  justify-content: center;
-}
+  .items-center-md {
+    align-items: center;
+  }
 
-.items-start {
-  justify-content: center;
-}
+
+
 .line {
   display: none;
+} 
+  h1 {
+    font-size: 36px;  /* smaller for phone */
+    letter-spacing: -2.5px;
+  }
+
+  h2 {
+    font-size: 28px;
+    letter-spacing: -0.8px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+  font-size: 14px;
+  }
+
+
+  .flex-col-md {
+    flex-direction: column;
+  }
+
+ 
+  .gap-8-md {
+    gap: 8px;
+  }
+
+   .gap-32-md {
+    gap: 32px;
+  }
+
+  
+   .gap-180-md {
+    gap: 180px;
+  }
+
+    .gap-140-md {
+    gap: 140px;
+  }
+
+
+  
+
+  .btn-prin {
+
+
+ 
+  font-size: 18px;
+letter-spacing: -0.36px;
+
+ width: 154px;
+height: 54px;
+
+
 }
 
+
+.btn-sec {
+
+  font-size: 18px;
+ letter-spacing: -0.36px;
+width: 154px;
+height: 54px;
+
+}
+
+.icon {
+  height: 22px;
+  width: auto;
+}
+
+.footer-nav {
+  background-color: var(--darkGray);
+  border-radius: 32px ;
+  padding: 20px;
+  margin-bottom: 40px;
+height: 60px;
+  width: 100%;
+  max-width: calc(100% - 8px); /* o simplemente 100% */
+}
+
+
+nav {
+  flex-wrap: wrap;
+}
+
+footer {
+    margin-top: 140px;
+
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+}
 }

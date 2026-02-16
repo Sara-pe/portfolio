@@ -11,6 +11,7 @@ export const ProjectCard = (props) => {
     const { id, title, description, extra, tags, linkGit, linkWeb, video, img } = project;
 
     const [videoVisible, setVideoVisible] = useState(false)
+     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     return (
         <>
@@ -65,7 +66,7 @@ export const ProjectCard = (props) => {
                             <h2>Werewolves Assistant</h2>
                             <p className='gray'>Check out the video! </p>
                         </div>
-                        <video width="851" height="479" controls>
+                        <video className={style.video} width="851" height="479" controls>
                             <source src={video} type="video/mp4" />
                             Tu navegador no soporta el elemento <code>video</code>.
                         </video>
