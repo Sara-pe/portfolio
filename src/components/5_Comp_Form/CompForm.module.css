@@ -119,4 +119,19 @@ position: relative;
 
 padding: 24px 24px;
 }
+
+.container {
+  margin-top: 32px;
+}
+
+.inputText {
+    height: 160px;
+}
+
+.close {
+
+    top: 20px;
+    right: 20px;
+}
+
 }

@@ -12,7 +12,6 @@ export const CompAbout = () => {
 
 
 
-    // or do it with an array and then if id===tab.id visible : false
     return (
         <>
             <div className='flex flex-col gap-64'>

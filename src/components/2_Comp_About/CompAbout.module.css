@@ -31,7 +31,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 .entryHeader {
    display: flex;
     flex-direction: column;
@@ -48,4 +48,8 @@
     width: 100%;
 }
 
+
+ .iconxs {
+    height: 16px;
+}
 }

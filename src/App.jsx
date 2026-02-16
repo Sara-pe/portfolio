@@ -10,43 +10,51 @@ import { CompStack } from './components/3_Comp_Stack/CompStack'
 import { CompProjects } from './components/4_Comp_Projects/CompProjects'
 import { CompForm } from './components/5_Comp_Form/CompForm'
 
+
 import LogoIcon from './assets/placeholder-logo.svg';
 
 import IconGreen from './assets/lucide_dot.svg';
 
 import IconMess from './assets/contact_icons/bubble.svg'
 
+import BurguerMenu from './assets/menu.svg'
+import IconClose from "./assets/close.svg"
 
 
 function App() {
 
- const [formVisible, setFormVisible] = useState(false)
+  const [formVisible, setFormVisible] = useState(false)
+   const [navVisible, setNavVisible] = useState(false)
 
   return (
     <>
       <div className='page flex flex-col items-center justify-center max-width'>
         <nav>
-        
-            <div className='flex flex-row items-center'>
-              <img className="logo-nav" src={LogoIcon} alt="Logo" />
-              <p>Sp</p>
-            </div>
 
-            <div className='flex flex-row items-center justify-end gap-28'>
-              <a href="#about">
-                About
-              </a>
-              <a href="#stack">
-                My Stack
-              </a>
+          <div className='flex flex-row items-center'>
+            <img className="logo-nav" src={LogoIcon} alt="Logo" />
+            <p>Sp</p>
+          </div>
 
-              <a href="#projects">
-                Projects
-              </a>
+          <div className='nav-phone'>
+            <button onClick={() => setNavVisible(prev => !prev)}><img className='icon-menu' src={(navVisible === false ) ? BurguerMenu : IconClose} alt="Open Menu" /></button>
+          </div>
 
-              <button  onClick={() => setFormVisible(true)} className='btn-contact'>Contact me</button>
-            </div>
-         
+          <div className={(navVisible === false ) ? 'menu-none' : 'menu-links'}>
+            <a href="#about">
+              About
+            </a>
+            <a href="#stack">
+              My Stack
+            </a>
+
+            <a href="#projects">
+              Projects
+            </a>
+
+            <button onClick={() => setFormVisible(true)} className='btn-contact'>Contact me</button>
+          </div>
+
         </nav>
 
         <main className='flex flex-col gap-264 gap-140-md'>
@@ -54,15 +62,15 @@ function App() {
           <div id="about"><CompAbout /></div>
           <div id="stack"><CompStack /></div>
           <div id="projects"><CompProjects /></div>
-        {formVisible && <div><CompForm onClose={() => setFormVisible(false)}/></div>}
+          {formVisible && <div><CompForm onClose={() => setFormVisible(false)} /></div>}
         </main>
 
         <footer className='flex flex-col gap-88 items-start-md '>
           <div className='flex flex-row justify-btw items-center flex-col-md gap-32-md items-start-md'>
             <h1>Let's Work Together</h1>
             <div className='line'></div>
-            <button 
-           onClick={() => setFormVisible(true)} className='btn-prin'>Let's Talk</button>
+            <button
+              onClick={() => setFormVisible(true)} className='btn-prin'>Let's Talk</button>
           </div>
 
           <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md items-start-md'>
@@ -119,9 +127,9 @@ function App() {
             <a href="#projects">
               Projects
             </a>
-            <a href="#">
+            {/*  <a href="#">
               Contact
-            </a>
+            </a>*/}
 
           </div>
 

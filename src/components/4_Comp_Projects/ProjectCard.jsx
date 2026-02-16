@@ -11,15 +11,15 @@ export const ProjectCard = (props) => {
     const { id, title, description, extra, tags, linkGit, linkWeb, video, img } = project;
 
     const [videoVisible, setVideoVisible] = useState(false)
-     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     return (
         <>
 
 
             <div className={`${style.card} flex flex-row gap-20 ${props.className || ""}`}>
-                <div className='flex flex-row justify-center items-center'>
-                <img className={style.imgWork} src={img} alt="Image Project" />
+                <div className={style.contImage}>
+                    <img className={style.imgWork} src={img} alt="Image Project" />
                 </div>
                 <div className={`flex flex-col justify-start items-start gap-20 ${style.info}`}>
 
@@ -63,7 +63,7 @@ export const ProjectCard = (props) => {
                     <div className={style.modal}>
                         <button onClick={() => setVideoVisible(false)}><img className={style.close} src={iconClose} alt="Close" /></button>
                         <div className={style.headerVideo}>
-                            <h2>Werewolves Assistant</h2>
+                            <h2>{title}</h2>
                             <p className='gray'>Check out the video! </p>
                         </div>
                         <video className={style.video} width="851" height="479" controls>

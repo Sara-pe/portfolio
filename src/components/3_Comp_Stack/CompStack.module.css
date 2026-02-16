@@ -21,6 +21,29 @@
 
 }
 
+.iconWrapper {
+  width: 140px;       
+  overflow: hidden;   
+mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carrouselStack {
+  display: flex;
+  gap: 4px;
+  width: max-content;
+  animation: scroll 28s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 @media (max-width: 768px) {
 
 .carrouselStack {

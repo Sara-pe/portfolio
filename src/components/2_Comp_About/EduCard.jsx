@@ -15,7 +15,7 @@ export const EduCard = () => {
             <div className='flex flex-row'>
                 <h4>Full-stack Developer training</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">Interface 3, BE</h4>
+                <h4 className="gray">Interface 3</h4>
             </div>
             <div className='line'></div>
             <p className="gray">2025 - 2026</p>
@@ -30,7 +30,7 @@ export const EduCard = () => {
             <div className='flex flex-row'>
                 <h4>Master’s in Visual Arts</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">LUCA School of Arts – KU Leuven, BE</h4>
+                <h4 className="gray">LUCA School of Arts</h4>
             </div>
             <div className='line'></div>
             <p className="gray">2020 - 2022</p>
@@ -45,7 +45,7 @@ export const EduCard = () => {
             <div className='flex flex-row'>
                 <h4>Bachelor’s degree in Fine Arts</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">Universidade de Vigo, SP</h4>
+                <h4 className="gray">Vigo University</h4>
             </div>
             <div className='line'></div>
             <p className="gray">2015 - 2019</p>
@@ -58,9 +58,9 @@ export const EduCard = () => {
     <div className={style.entry}>
         <div className={style.entryHeader}>
             <div className='flex flex-row'>
-                <h4>Bachelor’s degree in Architecture</h4>
+                <h4>Bachelor’s in Architecture</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">Universidade de A Coruña, SP</h4>
+                <h4 className="gray">A Coruña University</h4>
             </div>
             <div className='line'></div>
             <p className="gray">2012 - 2015</p>

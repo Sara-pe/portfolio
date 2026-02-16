@@ -12,10 +12,10 @@ export const ExpCard = () => {
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
-            <div className='flex flex-row flex-col-md'>
+            <div className='flex flex-row'>
                 <h4>Gallery Registrar</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">Xavier Hufkens Gallery, Brussels BE</h4>
+                <h4 className="gray">Xavier Hufkens Gallery</h4>
             </div>
             <div className='line'></div>
             <p className="gray">04/2023 – 04/2024</p>
@@ -27,10 +27,10 @@ export const ExpCard = () => {
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
-            <div className='flex flex-row flex-col-md'>
-                <h4>Communication & Graphic Design Lead</h4>
+            <div className='flex flex-row'>
+                <h4>Comms & Design Lead</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">Gleam Gallery - FYBO SPRL, Brussels BE</h4>
+                <h4 className="gray">Gleam Gallery</h4>
             </div>
             <div className='line'></div>
             <p className="gray">10/2020 – 06/2022</p>
@@ -42,10 +42,10 @@ export const ExpCard = () => {
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
-            <div className='flex flex-row flex-col-md'>
-                <h4>Gallery Assistant Internship</h4>
+            <div className='flex flex-row'>
+                <h4>Assistant Internship</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">Office Baroque Gallery, Brussels BE</h4>
+                <h4 className="gray">Office Baroque Gallery</h4>
             </div>
             <div className='line'></div>
             <p className="gray">08/2019 – 02/2020</p>

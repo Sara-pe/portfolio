@@ -64,7 +64,7 @@ export const CompProjects = () => {
 
     const [idVisible, setIdVisible] = useState(1)
 
-const [touchStart, setTouchStart] = useState(0);
+    const [touchStart, setTouchStart] = useState(0);
 
     const handleTouchStart = (e) => {
         setTouchStart(e.touches[0].clientX);
@@ -72,7 +72,7 @@ const [touchStart, setTouchStart] = useState(0);
 
     const handleTouchEnd = (e) => {
         const touchEnd = e.changedTouches[0].clientX;
-        
+
         if (touchStart - touchEnd > 50) {
             // Swipe izquierda → siguiente
             setIdVisible(prev => (prev % projects.length) + 1);
@@ -90,17 +90,28 @@ const [touchStart, setTouchStart] = useState(0);
                     <div className='flex flex-row items-center justify-btw'>
                         <h2>Projects</h2>
                         <div className='line'></div>
-                        <div className={style.carrouselHeader}>
-                            <img className={style.iconxs} src={Logo1} />
-                            <img className={style.iconxs} src={IconGreen} />
-                            <img className={style.iconxs} src={Logo2} />
-                            <img className={style.iconxs} src={IconGreen} />
-                            <img className={style.iconxs} src={Logo3} />
+                        <div className={style.iconWrapper}>
+                            <div className={style.carrouselHeader}>
+                                <img className={style.iconxs} src={Logo1} />
+                                <img className={style.iconxs} src={IconGreen} />
+                                <img className={style.iconxs} src={Logo2} />
+                                <img className={style.iconxs} src={IconGreen} />
+                                <img className={style.iconxs} src={Logo3} />
 
-                        </div>
+                                <img className={style.iconxs} src={IconGreen} />
+
+                                <img className={style.iconxs} src={Logo1} />
+                                <img className={style.iconxs} src={IconGreen} />
+                                <img className={style.iconxs} src={Logo2} />
+                                <img className={style.iconxs} src={IconGreen} />
+                                <img className={style.iconxs} src={Logo3} />
+
+                                <img className={style.iconxs} src={IconGreen} />
+
+                            </div></div>
                     </div>
 
-
+<div>
 
                     {/* CARROUSEL PROJECTS */}
                     <div className={style.carouselWrapper}>
@@ -110,12 +121,12 @@ const [touchStart, setTouchStart] = useState(0);
                                 <img src={IconPrev} alt="Previous" />
                             </div>
                         </button>
-                 <div 
-    className={style.carouselTrack}
-    onTouchStart={handleTouchStart}
-    onTouchEnd={handleTouchEnd}
->
-   
+                        <div
+                            className={style.carouselTrack}
+                            onTouchStart={handleTouchStart}
+                            onTouchEnd={handleTouchEnd}
+                        >
+
 
                             {/* Carrousel style: only one visible */}
                             {/*     {
@@ -124,7 +135,7 @@ const [touchStart, setTouchStart] = useState(0);
                             }  */}
 
                             {/* Carrousel style: peek with swipe for phone */}
-                         {projects.map((project) => (
+                            {projects.map((project) => (
                                 <ProjectCard
                                     key={project.id}
                                     project={project}
@@ -149,9 +160,13 @@ const [touchStart, setTouchStart] = useState(0);
 
 
                     </div>
-
-
-
+                    <div className='flex flex-row justify-center'>
+                        <div className={style.itemMarker}>
+                            <div className={(idVisible === 1) ? style.marked : style.gray} ></div>
+                            <div className={(idVisible === 2) ? style.marked : style.gray} ></div>
+                            <div className={(idVisible === 3) ? style.marked : style.gray} ></div>
+                           
+                        </div> </div></div>
                 </div>
                 {/*  <button className='btn-sec'>View all projects</button> */}
             </div>

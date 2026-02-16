@@ -1,8 +1,16 @@
 .imgWork {
-    height: 320px;
+    width: 100%;
+    height: auto;
 
 }
 
+.contImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 
 
 .iconxs {
@@ -10,14 +18,34 @@
    
 }
 
+.iconWrapper {
+  width: 140px;       
+  overflow: hidden;   
+mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
 .carrouselHeader {
     display: flex;
     flex-direction: row;
+    gap: 4px;
+  width: max-content;
+  animation: scroll 8s linear infinite;
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 .info {
     width: 100%;
     overflow: auto;
+    flex: 1;
 }
 
 .tag {
@@ -42,8 +70,15 @@ z-index: 10;
 }
 
 .tags {
-    width: 332px;
+   width: 100%;
+    max-width: 332px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+
+
 
 .modalBackground {
 
@@ -196,6 +231,38 @@ position: relative;
   z-index: 1;
 }
 
+.itemMarker {
+
+
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+ 
+  background-color: rgb(66, 66, 66);
+ width: 72px;
+ height: 28px;
+border-radius: 20px;
+}
+
+.itemMarker div {
+  height: 8px;
+  width: 8px;
+  border-radius: 50px;
+}
+
+.marked {
+  background-color: rgb(255, 255, 255);
+
+}
+
+.gray {
+  background-color: rgb(66, 66, 66);
+ background: var(--gray);
+}
+
+
 
 /* -----------------------------------------*/
 /* -------Responsive Phone version----------*/
@@ -203,8 +270,10 @@ position: relative;
 
 
 @media (max-width: 768px) {
-    .card {
-  flex-wrap: wrap;
+ /*! CHECK WITH NEW PHOTOS SQUARE RATIO IN CARROUSEL */
+ 
+   .card {
+  flex-direction: column;
 }
 .text {
 max-width: none;
@@ -215,12 +284,19 @@ width: 100%;
   overflow-x: hidden;
 }
 
+.carouselWrapper {
+  gap: 0px;
+  width: 100%;
+
+
+}
 
   .card {
     position: static;  
     transform: none;   
     opacity: 1;
     min-height: auto;
+    min-height: 622px; 
   }
 
 .prev {
@@ -237,6 +313,10 @@ display: none;
     display: none;
 }
 
+.carouselTrack {
+  width: 100%;
+}
+
 
 .circle {
   display: none;
@@ -247,12 +327,6 @@ display: none;
   height: auto;
 }
 
-.tags {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
 
 
 .modal {
@@ -262,4 +336,20 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 height: auto;
-}}
+}
+
+
+
+.headerVideo{
+  margin-top: 32px;
+}
+
+
+
+.close {
+
+    top: 20px;
+    right: 20px;
+}
+
+}

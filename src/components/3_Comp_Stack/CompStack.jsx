@@ -29,16 +29,65 @@ export const CompStack = () => {
                 <div className='flex flex-row items-center justify-btw'>
                 <h2>My stack</h2>
                 <div className='line'></div>
+                <div className={style.iconWrapper}>
                 <div className={style.carrouselStack}>
-                    <img className={style.iconxs} src={Icon10} alt="JavaScript" />
-                    <img className={style.iconxs} src={IconGreen} alt="dot" />
-                    <img className={style.iconxs} src={Icon13} alt="React" />
-                    <img className={style.iconxs} src={IconGreen} alt="dot" />
-                    <img className={style.iconxs} src={Icon6} alt="Figma" />
-                    <img className={style.iconxs} src={IconGreen} alt="dot" />
-                    <img className={style.iconxs} src={Icon7} alt="Git" />
-                    <img className={style.iconxs} src={IconGreen} alt="dot" />
-                    <img className={style.iconxs} src={Icon10} alt="JavaScript" />
+     <img className={style.iconxs} src={Icon1} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon2} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon3} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon4} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon5} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon6} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon7} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon8} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon9} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon10} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon11} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon12} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon13} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon14} />
+<img className={style.iconxs} src={IconGreen} />
+
+<img className={style.iconxs} src={Icon1} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon2} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon3} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon4} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon5} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon6} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon7} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon8} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon9} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon10} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon11} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon12} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon13} />
+<img className={style.iconxs} src={IconGreen} />
+<img className={style.iconxs} src={Icon14} />
+                </div>
                 </div>
                 </div>
 
