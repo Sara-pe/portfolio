@@ -28,7 +28,7 @@ export const CompProjects = () => {
             extra: "It tracks votes and eliminations, and determines the game's end and winning team. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
             tags: ["CSS", "HTML", "JavaScript"],
             linkGit: "https://github.com/Sara-pe/Werewolves_Assistant",
-            linkWeb: "",
+            linkWeb: "https://werewolves-assistant.vercel.app/",
             video: "https://player.vimeo.com/video/1165636672?badge=0&autopause=0&player_id=0&app_id=58479",
             img: WorkImage1
 
