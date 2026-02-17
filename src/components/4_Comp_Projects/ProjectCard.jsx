@@ -59,7 +59,7 @@ export const ProjectCard = (props) => {
                         </button>
                         <img className='icon' src={IconGreen} alt="dot" />
 
-                        <a> <svg className="icon" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <a href={linkWeb}> <svg className="icon" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.64625 24.3538C7.59976 24.3073 7.56288 24.2522 7.53772 24.1915C7.51256 24.1308 7.49961 24.0657 7.49961 24C7.49961 23.9343 7.51256 23.8692 7.53772 23.8085C7.56288 23.7478 7.59976 23.6927 7.64625 23.6463L22.7925 8.5L11 8.5C10.8674 8.5 10.7402 8.44732 10.6464 8.35355C10.5527 8.25979 10.5 8.13261 10.5 8C10.5 7.86739 10.5527 7.74022 10.6464 7.64645C10.7402 7.55268 10.8674 7.5 11 7.5L24 7.5C24.1326 7.5 24.2598 7.55268 24.3536 7.64645C24.4473 7.74022 24.5 7.86739 24.5 8L24.5 21C24.5 21.1326 24.4473 21.2598 24.3536 21.3536C24.2598 21.4473 24.1326 21.5 24 21.5C23.8674 21.5 23.7402 21.4473 23.6464 21.3536C23.5527 21.2598 23.5 21.1326 23.5 21L23.5 9.2075L8.35375 24.3538C8.30731 24.4002 8.25217 24.4371 8.19147 24.4623C8.13077 24.4874 8.06571 24.5004 8 24.5004C7.93429 24.5004 7.86923 24.4874 7.80853 24.4623C7.74783 24.4371 7.69269 24.4002 7.64625 24.3538Z" fill="currentColor" />
                         </svg></a>
                     </div>
@@ -77,12 +77,12 @@ export const ProjectCard = (props) => {
                             <p className='gray'>Check out the video! </p>
                         </div>
 
-<iframe
-  src={video}
-  title="Demo video"
-  allow="autoplay; fullscreen"
-  className={style.video}
-/>
+                        <iframe
+                            src={video}
+                            title="Demo video"
+                            allow="autoplay; fullscreen"
+                            className={style.video}
+                        />
 
 
                     </div>
