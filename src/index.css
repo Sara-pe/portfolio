@@ -289,6 +289,10 @@ a:hover .icon {
   color: white;
 }
 
+button:hover .icon {
+  color: white;
+}
+
 .max-width {
   max-width: 1280px;
 }

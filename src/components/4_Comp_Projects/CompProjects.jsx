@@ -29,7 +29,7 @@ export const CompProjects = () => {
             tags: ["CSS", "HTML", "JavaScript"],
             linkGit: "https://github.com/Sara-pe/Werewolves_Assistant",
             linkWeb: "",
-            video: "/video/werewolves_final.mp4",
+            video: "https://player.vimeo.com/video/1165636672?badge=0&autopause=0&player_id=0&app_id=58479",
             img: WorkImage1
 
 
