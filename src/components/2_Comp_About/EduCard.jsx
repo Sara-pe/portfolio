@@ -21,7 +21,7 @@ export const EduCard = () => {
             <p className="gray">2025 - 2026</p>
         </div>
         <p className="gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.
+            One-year intensive training program focused on front-end development, UX/UI design, and full-stack architecture. Hands-on experience with React, Angular, Node.js, and MongoDB
         </p>
     </div>
 
@@ -36,14 +36,14 @@ export const EduCard = () => {
             <p className="gray">2020 - 2022</p>
         </div>
         <p className="gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.
+            Research-driven program focused on critical analysis and contemporary art theory, strengthening conceptual thinking and structured problem framing applicable to UX strategy.
         </p>
     </div>
 
     <div className={style.entry}>
         <div className={style.entryHeader}>
             <div className='flex flex-row'>
-                <h4>Bachelor’s degree in Fine Arts</h4>
+                <h4>Bachelor’s in Fine Arts</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
                 <h4 className="gray">Vigo University</h4>
             </div>
@@ -51,7 +51,7 @@ export const EduCard = () => {
             <p className="gray">2015 - 2019</p>
         </div>
         <p className="gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.
+            Programme in visual arts including graphic design, composition, and digital tools such as Photoshop and Illustrator, building a strong foundation in visual communication and layout.
         </p>
     </div>
 
@@ -60,13 +60,13 @@ export const EduCard = () => {
             <div className='flex flex-row'>
                 <h4>Bachelor’s in Architecture</h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
-                <h4 className="gray">A Coruña University</h4>
+                <h4 className="gray">Coruña University</h4>
             </div>
             <div className='line'></div>
             <p className="gray">2012 - 2015</p>
         </div>
         <p className="gray">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim.
+           Studies in architectural design, construction, and technical drawing, developing spatial reasoning and a structured way of approaching design problems.
         </p>
     </div>
 

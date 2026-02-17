@@ -197,7 +197,7 @@ position: relative;
     border-radius: 40px;
     background: var(--darkGray);
     padding: 40px;
-       border: 0.5px solid var(--green);
+   /*    border: 0.5px solid var(--green);*/
  /*   flex-wrap: wrap;*/
 }
 

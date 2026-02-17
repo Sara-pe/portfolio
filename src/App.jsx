@@ -73,8 +73,8 @@ function App() {
               onClick={() => setFormVisible(true)} className='btn-prin'>Let's Talk</button>
           </div>
 
-          <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md items-start-md'>
-            <div className='flex flex-row justify-start items-center items-start-md'>
+          <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md items-start-md gap-32-md'>
+            <div className='flex flex-row justify-start items-center items-start-md '>
               <a href="https://github.com/Sara-pe">
 
                 <svg
@@ -106,8 +106,8 @@ function App() {
 
             <div className='line'></div>
             <div className='flex flex-row justify-end items-center gap-8'>
-              <img src={IconMess} alt="Send an email" />
-              <a href="mailto:sarapena.z@gmail.com" className='gray'>sarapena.z@gmail.com</a>
+              <img src={IconMess} className='icon-m' alt="Send an email" />
+              <a className='email' href="mailto:sarapena.z@gmail.com">sarapena.z@gmail.com</a>
             </div>
           </div>
 

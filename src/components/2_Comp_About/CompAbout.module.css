@@ -27,7 +27,40 @@
 }
 
 .green {
-    color: var(--green);
+   
+    background-color: var(--green);
+   
+    color: var(--darkGray);
+ border-radius: 16px;
+  height: 60px;
+  width: 300px;
+   
+}
+
+.disabled {
+    height: 60px;
+  width: 280px;
+    
+}
+
+.disabled:hover {
+  cursor: pointer;
+    
+}
+
+
+.sliderButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  background-color: var(--darkGray);
+  height: 60px;
+  width: 560px;
+ 
+  border-radius: 16px;
+
+
 }
 
 
@@ -52,4 +85,23 @@
  .iconxs {
     height: 16px;
 }
+
+
+  .green {
+  width: 50%;
+   height: 52px;
 }
+
+.disabled {
+  width: 50%;
+    height: 52px;
+}
+
+
+
+
+.sliderButtons {
+  width: 100%;
+  border-radius: 16px;
+height: 52px;
+}}

@@ -17,7 +17,7 @@ const { onFormVisible } = props;
                 </div>
                 </div>
 
-                <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md'>
+                <div className='flex flex-row justify-btw items-center flex-col-md gap-20-md'>
                     <div className='flex flex-row gap-8 items-center'>
                         <img src={LocationIcon} alt="Icon location" />
                         <p className='gray'>Based in Brussels</p>

@@ -14,17 +14,19 @@ export const CompAbout = () => {
 
     return (
         <>
-            <div className='flex flex-col gap-64'>
-                <div className='flex flex-row gap-64 flex-col-md items-start-md gap-8-md'>
+            <div className='flex flex-col gap-64 gap-32-md'>
+                <h2>About</h2>
+                <div className={style.sliderButtons}>
+
                     <button className={
                         style.headerButton + ' ' +
-                        (activeSection === "exp" ? style.green : '')
-                    } onClick={() => { setActiveSection("exp") }}>  <h2>My experience</h2> </button>
+                        (activeSection === "exp" ? style.green : style.disabled)
+                    } onClick={() => { setActiveSection("exp") }}>  <h3>My experience</h3> </button>
                     <button className={
                         style.headerButton + ' ' +
-                        (activeSection === "edu" ? style.green : '')
-                    } onClick={() => { setActiveSection("edu") }}>   <h2>My education</h2> </button>
-               {/*     <h2>Soft skills</h2> */}
+                        (activeSection === "edu" ? style.green : style.disabled)
+                    } onClick={() => { setActiveSection("edu") }}>   <h3>My education</h3> </button>
+                    {/*     <h2>Soft skills</h2> */}
                 </div>
                 {
                     activeSection === "exp" &&
@@ -34,9 +36,9 @@ export const CompAbout = () => {
                     <EduCard />}
 
                 <a href="/cv/cv_green.pdf" download>
-                <button className='btn-sec'>Download CV</button>
-            </a>
-        </div >
+                    <button className='btn-sec'>Download CV</button>
+                </a>
+            </div >
         </>
     );
 }

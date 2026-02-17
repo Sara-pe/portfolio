@@ -55,7 +55,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: 44px;
+  font-size: 32px;
 }
 
 h4 {
@@ -77,8 +77,8 @@ p {
 
 :root {
   --green: #83FE42;
-  --gray: #8A8A8A;
-  --darkGray: #121212;
+  --gray: #979797;
+  --darkGray: #212121;
 }
 
 .green {
@@ -328,6 +328,10 @@ width: auto;
   position: static;
 }
 
+.email {
+  color: var(--gray);
+}
+
 /* -----------------------------------------*/
 /* -------Responsive Phone version----------*/
 /* -----------------------------------------*/
@@ -392,11 +396,11 @@ width: auto;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: -0.5px;
   }
 
@@ -414,6 +418,10 @@ width: auto;
 
   .gap-8-md {
     gap: 8px;
+  }
+
+   .gap-20-md {
+    gap: 20px;
   }
 
   .gap-32-md {
@@ -438,12 +446,19 @@ width: auto;
   .btn-sec {
     font-size: 18px;
     letter-spacing: -0.36px;
-    width: 154px;
+    width: auto;
     height: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .icon {
+  /*.icon {
     height: 22px;
+    width: auto;
+  }*/
+
+  .icon-m{
+    height: 32px;
     width: auto;
   }
 
@@ -513,6 +528,10 @@ opacity: 0;
 
 .menu-none {
   display: none;
+}
+
+.email {
+  font-size: 18px;
 }
 
 }

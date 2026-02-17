@@ -38,7 +38,7 @@ export const CompProjects = () => {
         {
             id: 2,
             title: "PayGap",
-            description: "Salary comparison tool based on profession and experience. Data from Les chiffres de l’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes).",
+            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes).",
             extra: "The platform helps women understand what they should be earning and tackle the 20% gender pay gap. It also includes a step-by-step guide on how to request a raise, plus additional resources.",
             tags: ["CSS", "HTML", "JavaScript", "Php"],
             linkGit: "https://github.com/sahardel92/PayGapHackathon",
@@ -86,7 +86,7 @@ export const CompProjects = () => {
     return (
         <>
             <div className='flex flex-col gap-44 items-center'>
-                <div className='flex flex-col gap-64 w-full'>
+                <div className='flex flex-col gap-64 w-full gap-32-md'>
                     <div className='flex flex-row items-center justify-btw'>
                         <h2>Projects</h2>
                         <div className='line'></div>

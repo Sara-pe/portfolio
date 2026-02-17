@@ -25,7 +25,7 @@ export const CompStack = () => {
 
     return (
         <>
-            <div className='flex flex-col gap-64'>
+            <div className='flex flex-col gap-64 gap-32-md'>
                 <div className='flex flex-row items-center justify-btw'>
                 <h2>My stack</h2>
                 <div className='line'></div>
