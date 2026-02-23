@@ -77,7 +77,8 @@ export const ProjectCard = (props) => {
                         <button onClick={() => setVideoVisible(false)}><img className={style.close} src={iconClose} alt="Close" /></button>
                         <div className={style.headerVideo}>
                             <h2>{title}</h2>
-                            <p className='gray'>Check out the video! </p>
+                            <div className='line'></div>
+                            <p className='gray'>Watch the website demo</p>
                         </div>
 
                         <iframe
