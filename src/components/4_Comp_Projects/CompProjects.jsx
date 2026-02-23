@@ -14,8 +14,8 @@ import IconPrev from '../../assets/left.svg'
 
 
 import WorkImage1 from "../../assets/Portfolio_images/wa.jpg";
-import WorkImage2 from "../../assets/Portfolio_images/pg.png";
-import WorkImage3 from "../../assets/Portfolio_images/portfolio.png";
+import WorkImage2 from "../../assets/Portfolio_images/pg.jpg";
+import WorkImage3 from "../../assets/Portfolio_images/portfolio.jpg";
 
 
 export const CompProjects = () => {
