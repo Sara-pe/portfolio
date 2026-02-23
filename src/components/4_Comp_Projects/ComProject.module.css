@@ -83,7 +83,7 @@
 
 .tags {
   width: 100%;
-  max-width: 332px;
+  max-width: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -356,7 +356,7 @@
     transform: none;
     opacity: 1;
     overflow: hidden;
-    min-height: 622px;
+    min-height: 678px;
   }
 
   .prev {
