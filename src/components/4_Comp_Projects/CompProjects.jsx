@@ -13,7 +13,7 @@ import IconNext from '../../assets/right.svg'
 import IconPrev from '../../assets/left.svg'
 
 
-import WorkImage1 from "../../assets/Portfolio_images/wa.png";
+import WorkImage1 from "../../assets/Portfolio_images/wa.jpg";
 import WorkImage2 from "../../assets/Portfolio_images/pg.png";
 import WorkImage3 from "../../assets/Portfolio_images/portfolio.png";
 
@@ -38,7 +38,7 @@ export const CompProjects = () => {
         {
             id: 2,
             title: "PayGap",
-            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes).",
+            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes). Group project as part of a one-week hackathon.",
             extra: "The platform helps women understand what they should be earning and tackle the 20% gender pay gap. It also includes a step-by-step guide on how to request a raise, plus additional resources.",
             tags: ["CSS", "HTML", "JavaScript", "Php"],
             linkGit: "https://github.com/sahardel92/PayGapHackathon",
@@ -85,7 +85,7 @@ export const CompProjects = () => {
 
     return (
         <>
-            <div className='flex flex-col gap-44 items-center'>
+            <div className={style.containerProjects}>
                 <div className='flex flex-col gap-64 w-full gap-32-md'>
                     <div className='flex flex-row items-center justify-btw'>
                         <h2>Projects</h2>

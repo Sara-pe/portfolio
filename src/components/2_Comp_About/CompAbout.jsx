@@ -22,11 +22,15 @@ export const CompAbout = () => {
                         style.headerButton + ' ' +
                         (activeSection === "exp" ? style.green : style.disabled)
                     } onClick={() => { setActiveSection("exp") }}>  <h3>My experience</h3> </button>
+    
                     <button className={
                         style.headerButton + ' ' +
                         (activeSection === "edu" ? style.green : style.disabled)
                     } onClick={() => { setActiveSection("edu") }}>   <h3>My education</h3> </button>
                     {/*     <h2>Soft skills</h2> */}
+
+                    <div className={style.greenRectangle + ' ' + (activeSection === "exp" ? style.left : style.right)
+                    } ></div>
                 </div>
                 {
                     activeSection === "exp" &&

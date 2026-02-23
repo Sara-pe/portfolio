@@ -28,19 +28,19 @@
 
 .green {
    
-    background-color: var(--green);
+   
    
     color: var(--darkGray);
  border-radius: 16px;
   height: 60px;
   width: 300px;
-   
+   z-index: 3;
 }
 
 .disabled {
     height: 60px;
   width: 280px;
-    
+    z-index: 3;
 }
 
 .disabled:hover {
@@ -59,8 +59,29 @@
   width: 560px;
  
   border-radius: 16px;
+z-index: 1;
+position: relative;
+}
 
+.greenRectangle {
+  position: absolute;
+ border-radius: 16px;
+  height: 60px;
+  width: 290px;
+ background-color: var(--green);
+  transition: transform 0.3s ease;
+top: 0px;
+  left: 0px;
+  z-index: 2;
+} 
 
+.left {
+transform: translateX(0%);
+}
+
+.right {
+  transform: translateX(270px);
+ /* right: 0px; */
 }
 
 
@@ -98,10 +119,26 @@
 }
 
 
-
-
 .sliderButtons {
   width: 100%;
   border-radius: 16px;
 height: 52px;
-}}
+}
+
+
+.greenRectangle {
+width: 50%;
+   height: 52px;
+} 
+
+.left {
+transform: translateX(0%);
+}
+
+.right {
+  transform: translateX(100%);
+ /* right: 0px; */
+}
+
+
+}
