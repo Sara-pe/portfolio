@@ -132,9 +132,10 @@ function App() {
             </a>*/}
 
           </div>
-
-
-        </footer>
+<div className='copyright'>
+<p>© 2026 Sara Pena All Rights Reserved.</p>
+   </div>    
+    </footer>
       </div>
     </>
   )
