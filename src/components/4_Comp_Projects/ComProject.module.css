@@ -29,6 +29,11 @@
 
 }
 
+.rot {
+  transform: rotate(45deg);
+  height: 20px;
+}
+
 .iconWrapper {
   width: 140px;
   overflow: hidden;
@@ -38,6 +43,7 @@
 .carrouselHeader {
   display: flex;
   flex-direction: row;
+align-items: center;
   gap: 4px;
   width: max-content;
   animation: scroll 8s linear infinite;

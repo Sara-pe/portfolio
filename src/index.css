@@ -336,8 +336,9 @@ width: auto;
 }
 
 .logo-nav {
-height: 32px;
+height: 40px;
 width: auto;
+transform: rotate(45deg);
 }
 
 .copyright {
