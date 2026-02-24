@@ -31,7 +31,7 @@ function App() {
       <div className='page flex flex-col items-center justify-center max-width'>
         <nav>
 
-          <div className='flex flex-row items-center justify-center gap-16'>
+          <div className='flex flex-row items-center justify-start gap-16'>
             <img className="logo-nav" src={LogoIcon} alt="Logo" />
          <h4>Sara Pena</h4> 
           </div>
