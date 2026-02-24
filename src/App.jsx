@@ -11,7 +11,7 @@ import { CompProjects } from './components/4_Comp_Projects/CompProjects'
 import { CompForm } from './components/5_Comp_Form/CompForm'
 
 
-import LogoIcon from './assets/placeholder-logo.svg';
+import LogoIcon from './assets/logo-white.png';
 
 import IconGreen from './assets/lucide_dot.svg';
 
@@ -31,9 +31,9 @@ function App() {
       <div className='page flex flex-col items-center justify-center max-width'>
         <nav>
 
-          <div className='flex flex-row items-center'>
+          <div className='flex flex-row items-center justify-center gap-16'>
             <img className="logo-nav" src={LogoIcon} alt="Logo" />
-            <p>Sp</p>
+            <h4>Sara Pena</h4>
           </div>
 
           <div className='nav-phone'>

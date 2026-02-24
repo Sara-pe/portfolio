@@ -336,6 +336,11 @@ width: auto;
   color: var(--gray);
 }
 
+.logo-nav {
+height: 32px;
+width: auto;
+}
+
 /* -----------------------------------------*/
 /* -------Responsive Phone version----------*/
 /* -----------------------------------------*/
