@@ -30,8 +30,9 @@
 }
 
 .rot {
-  transform: rotate(45deg);
-  height: 20px;
+ /* transform: rotate(45deg);
+  height: 20px; */
+  height: 24px;
 }
 
 .iconWrapper {

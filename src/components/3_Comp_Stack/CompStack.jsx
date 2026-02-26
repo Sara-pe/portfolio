@@ -8,7 +8,7 @@ import Icon5 from "../../assets/stack_icons/5.png";
 import Icon6 from "../../assets/stack_icons/6.svg";
 import Icon7 from "../../assets/stack_icons/7.svg";
 import Icon8 from "../../assets/stack_icons/8.png";
-import Icon9 from "../../assets/stack_icons/9.webp";
+import Icon9 from "../../assets/stack_icons/9.png";
 import Icon10 from "../../assets/stack_icons/10.svg";
 import Icon11 from "../../assets/stack_icons/11.svg";
 import Icon12 from "../../assets/stack_icons/12.svg";
@@ -27,68 +27,68 @@ export const CompStack = () => {
         <>
             <div className='flex flex-col gap-64 gap-32-md'>
                 <div className='flex flex-row items-center justify-btw'>
-                <h2>My stack</h2>
-                <div className='line'></div>
-                <div className={style.iconWrapper}>
-                <div className={style.carrouselStack}>
-     <img className={style.iconxs} src={Icon1} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon2} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon3} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon4} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon5} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon6} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon7} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon8} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon9} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon10} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon11} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon12} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon13} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon14} />
-<img className={style.iconxs} src={IconGreen} />
+                    <h2>My stack</h2>
+                    <div className='line'></div>
+                    <div className={style.iconWrapper}>
+                        <div className={style.carrouselStack}>
+                            <img className={style.iconxs} src={Icon1} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon2} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon3} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon4} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon5} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon6} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon7} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon8} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon9} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon10} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon11} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon12} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon13} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon14} />
+                            <img className={style.iconxs} src={IconGreen} />
 
-<img className={style.iconxs} src={Icon1} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon2} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon3} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon4} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon5} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon6} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon7} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon8} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon9} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon10} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon11} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon12} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon13} />
-<img className={style.iconxs} src={IconGreen} />
-<img className={style.iconxs} src={Icon14} />
-                </div>
-                </div>
+                            <img className={style.iconxs} src={Icon1} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon2} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon3} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon4} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon5} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon6} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon7} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon8} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon9} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon10} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon11} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon12} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon13} />
+                            <img className={style.iconxs} src={IconGreen} />
+                            <img className={style.iconxs} src={Icon14} />
+                        </div>
+                    </div>
                 </div>
 
                 <div className="flex flex-row justify-center gap-28 flex-wrap">

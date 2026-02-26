@@ -38,12 +38,12 @@ export const CompProjects = () => {
         {
             id: 2,
             title: "PayGap",
-            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes). Group project as part of a one-week hackathon.",
+            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes, Belgique). Group project as part of a one-week hackathon.",
             extra: "The platform helps women understand what they should be earning and tackle the 20% gender pay gap. It also includes a step-by-step guide on how to request a raise, plus additional resources.",
             tags: ["CSS", "HTML", "JavaScript"],
             linkGit: "https://github.com/sahardel92/PayGapHackathon",
             linkWeb: "",
-            video: "https://player.vimeo.com/video/1167449737?badge=0&autopause=0&player_id=0&app_id=58479",
+            video: "https://player.vimeo.com/video/1168124943?badge=0&autopause=0&player_id=0&app_id=58479",
             img: WorkImage2
 
         },
