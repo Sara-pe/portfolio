@@ -3,6 +3,7 @@
 import './App.css'
 
 import { useState } from "react"
+import { Reveal } from "./components/ui/Reveal"
 
 import { CompIntro } from './components/1_Comp_Intro/CompIntro'
 import { CompAbout } from './components/2_Comp_About/CompAbout'
@@ -58,11 +59,15 @@ function App() {
         </nav>
 
         <main className='flex flex-col gap-264 gap-140-md'>
+           <Reveal>
           <div id="intro"><CompIntro onFormVisible={() => setFormVisible(true)} /></div>
-          <div id="about"><CompAbout /></div>
+          </Reveal> 
+          <div id="about"><CompAbout /></div>  
           <div id="stack"><CompStack /></div>
           <div id="projects"><CompProjects /></div>
+        
           {formVisible && <div><CompForm onClose={() => setFormVisible(false)} /></div>}
+
         </main>
 
         <footer className='flex flex-col gap-88 items-start-md '>

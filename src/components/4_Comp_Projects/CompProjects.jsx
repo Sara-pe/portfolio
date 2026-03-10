@@ -2,6 +2,7 @@ import style from './ComProject.module.css'
 import { ProjectCard } from './ProjectCard'
 import { useState } from 'react';
 
+import { Reveal } from "../ui/Reveal"
 
 import Logo1 from '../../assets/logos_projects/wolf.svg'
 import Logo2 from '../../assets/logos_projects/paygap.png'
@@ -87,86 +88,91 @@ export const CompProjects = () => {
         <>
             <div className={style.containerProjects}>
                 <div className='flex flex-col gap-64 w-full gap-32-md'>
-                    <div className='flex flex-row items-center justify-btw'>
-                        <h2>Projects</h2>
-                        <div className='line'></div>
-                        <div className={style.iconWrapper}>
-                            <div className={style.carrouselHeader}>
-                                <img className={style.iconxs} src={Logo1} />
-                                <img className={style.iconxs} src={IconGreen} />
-                                <img className={style.iconxs} src={Logo2} />
-                                <img className={style.iconxs} src={IconGreen} />
-                                <img className={`${style.iconxs} ${style.rot}`}src={Logo3} />
+                    <Reveal>
+                        <div className='flex flex-row items-center justify-btw'>
+                            <h2>Projects</h2>
+                            <div className='line'></div>
+                            <div className={style.iconWrapper}>
+                                <div className={style.carrouselHeader}>
+                                    <img className={style.iconxs} src={Logo1} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo2} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={`${style.iconxs} ${style.rot}`} src={Logo3} />
 
-                                <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={IconGreen} />
 
-                                <img className={style.iconxs} src={Logo1} />
-                                <img className={style.iconxs} src={IconGreen} />
-                                <img className={style.iconxs} src={Logo2} />
-                                <img className={style.iconxs} src={IconGreen} />
-                                <img className={style.iconxs} src={Logo3} />
+                                    <img className={style.iconxs} src={Logo1} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo2} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo3} />
 
-                                <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={IconGreen} />
 
-                            </div></div>
-                    </div>
+                                </div></div>
+                        </div>
+                    </Reveal>
+                    <Reveal>
+                        <div>
 
-<div>
+                            {/* CARROUSEL PROJECTS */}
+                            <div className={style.carouselWrapper}>
 
-                    {/* CARROUSEL PROJECTS */}
-                    <div className={style.carouselWrapper}>
-
-                        <button onClick={() => { setIdVisible(prev => (prev - 2 + projects.length) % projects.length + 1) }}>
-                            <div className={`flex justify-center items-center ${style.circle}`}>
-                                <img src={IconPrev} alt="Previous" />
-                            </div>
-                        </button>
-                        <div
-                            className={style.carouselTrack}
-                            onTouchStart={handleTouchStart}
-                            onTouchEnd={handleTouchEnd}
-                        >
+                                <button onClick={() => { setIdVisible(prev => (prev - 2 + projects.length) % projects.length + 1) }}>
+                                    <div className={`flex justify-center items-center ${style.circle}`}>
+                                        <img src={IconPrev} alt="Previous" />
+                                    </div>
+                                </button>
+                                <div
+                                    className={style.carouselTrack}
+                                    onTouchStart={handleTouchStart}
+                                    onTouchEnd={handleTouchEnd}
+                                >
 
 
-                            {/* Carrousel style: only one visible */}
-                            {/*     {
+                                    {/* Carrousel style: only one visible */}
+                                    {/*     {
 
                                 projects.map(project => project.id === idVisible && <ProjectCard key={project.id} project={project} />)
                             }  */}
 
-                            {/* Carrousel style: peek with swipe for phone */}
-                            {projects.map((project) => (
-                                <ProjectCard
-                                    key={project.id}
-                                    project={project}
-                                    className={
-                                        project.id === idVisible
-                                            ? style.active
-                                            : project.id ===
-                                                (idVisible - 2 + projects.length) % projects.length + 1  // idVisible-1 but maintining the loop 
-                                                ? style.prev
-                                                : project.id ===
-                                                    (idVisible % projects.length) + 1 // idVisible+1 but maintining the loop 
-                                                    ? style.next
-                                                    : style.hidden
-                                    }
-                                />
-                            ))}
+                                    {/* Carrousel style: peek with swipe for phone */}
+                                    {projects.map((project) => (
+                                        <ProjectCard
+                                            key={project.id}
+                                            project={project}
+                                            className={
+                                                project.id === idVisible
+                                                    ? style.active
+                                                    : project.id ===
+                                                        (idVisible - 2 + projects.length) % projects.length + 1  // idVisible-1 but maintining the loop 
+                                                        ? style.prev
+                                                        : project.id ===
+                                                            (idVisible % projects.length) + 1 // idVisible+1 but maintining the loop 
+                                                            ? style.next
+                                                            : style.hidden
+                                            }
+                                        />
+                                    ))}
 
+                                </div>
+                                <button onClick={() => { setIdVisible(prev => (prev % projects.length) + 1) }} className={`flex justify-center items-center ${style.circle}`}>
+                                    <img src={IconNext} alt="Next" />
+                                </button>
+
+
+                            </div>
+                            <div className='flex flex-row justify-center'>
+                                <div className={style.itemMarker}>
+                                    <div className={(idVisible === 1) ? style.marked : style.gray} ></div>
+                                    <div className={(idVisible === 2) ? style.marked : style.gray} ></div>
+                                    <div className={(idVisible === 3) ? style.marked : style.gray} ></div>
+
+                                </div>
+                            </div>
                         </div>
-                        <button onClick={() => { setIdVisible(prev => (prev % projects.length) + 1) }} className={`flex justify-center items-center ${style.circle}`}>
-                            <img src={IconNext} alt="Next" />
-                        </button>
-
-
-                    </div>
-                    <div className='flex flex-row justify-center'>
-                        <div className={style.itemMarker}>
-                            <div className={(idVisible === 1) ? style.marked : style.gray} ></div>
-                            <div className={(idVisible === 2) ? style.marked : style.gray} ></div>
-                            <div className={(idVisible === 3) ? style.marked : style.gray} ></div>
-                           
-                        </div> </div></div>
+                    </Reveal>
                 </div>
                 {/*  <button className='btn-sec'>View all projects</button> */}
             </div>
