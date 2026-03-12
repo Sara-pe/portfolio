@@ -5,35 +5,185 @@
 .intro {
     height: 100%;
     width: 100%;
+    flex-direction: row;
+    gap: 88px
 }
 
 .textbox {
     width: 100%;
-    max-width: 552px;  
+    max-width: 552px;
+    order: 1;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    gap: 8px;
 }
 
-img {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: 1px solid #83FE42;
+    background-color: #15290B;
+    border-radius: 32px;
+    padding: 16px 28px;
+    width: fit-content;
+    height: 48px;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: dropAndBounce 0.8s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes dropAndBounce {
+
+    /* Drop */
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    /* Bounce */
+    60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-15px);
+    }
+
+    85% {
+        transform: translateY(0);
+    }
+
+    92% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.tag p {
+    color: var(--green);
+    font-size: 16px;
+}
+
+.icon {
     height: 20px;
     width: auto;
 }
 
-@media (max-width: 700px) {
-.container {
+.portrait {
+    height: 280px;
+    width: auto;
+ /*   position: absolute;
+    top: -24px;
+    right: 40px;
+    opacity: 0;
+    animation: dropDown 0.6s ease-out forwards;
+    animation-delay: 2s; */
+}
+
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+        transform-origin: top;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.containerPortrait {
+    width: 280px;
+    height: 280px;
     display: flex;
-    flex-direction: column;
-
-   width: 100%;
-   height: auto;
-   gap: 40px;
-   align-items: flex-start;
-   justify-content: center;
-   padding: 80px 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300px;
+    order: 2;
+    animation: fadeIn 1s ease-out forwards;
 }
 
-.intro {
-    width: 100%;
-    max-width: 400px;
+
+
+
+@media (max-width: 969px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .intro {
+        width: 100%;
+        flex-direction: column;
+        gap: 28px
+    }
+
+    .portrait {
+        width: 140px;
+        height: auto;
+    }
+
+    .containerPortrait {
+        width: 140px;
+        height: 140px;
+        order: 1;
+    }
+
+    .textbox {
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: center;
+
+    }
+
 }
+
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 40px;
+        padding: 80px 0px;
+    }
+
+    .intro {
+        max-width: 400px;
+    }
 
 
 

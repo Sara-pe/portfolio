@@ -59,9 +59,9 @@ function App() {
         </nav>
 
         <main className='flex flex-col gap-264 gap-140-md'>
-           <Reveal>
+         
           <div id="intro"><CompIntro onFormVisible={() => setFormVisible(true)} /></div>
-          </Reveal> 
+         
           <div id="about"><CompAbout /></div>  
           <div id="stack"><CompStack /></div>
           <div id="projects"><CompProjects /></div>
