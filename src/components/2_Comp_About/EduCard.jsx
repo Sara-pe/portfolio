@@ -21,7 +21,7 @@ export const EduCard = () => {
             <p className="gray">2025 - 2026</p>
         </div>
         <p className="gray">
-            One-year intensive training program focused on front-end development, UX/UI design, and full-stack architecture. Hands-on experience with React, Angular, Node.js, and MongoDB
+            One-year intensive training program focused on front-end development, UX/UI design, and full-stack architecture. Hands-on experience with React, Node.js, and MongoDB
         </p>
     </div>
 
