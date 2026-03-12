@@ -174,7 +174,7 @@
      .callContainer{ 
         flex-direction: column;
         justify-content: center;
-        gap: 8px;
+        gap: 16px;
      }
 
     .intro {
