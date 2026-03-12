@@ -163,6 +163,9 @@
         padding: 80px 0px;
     }
 
+    .tag {
+        display: none;
+    }
 
 .line {
     display: none;

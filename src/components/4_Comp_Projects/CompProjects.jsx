@@ -96,7 +96,7 @@ export const CompProjects = () => {
                                 <div className={style.carrouselHeader}>
                                     <img className={style.iconxs} src={Logo1} />
                                     <img className={style.iconxs} src={IconGreen} />
-                                    <img className={style.iconxs} src={Logo2}/>
+                                    <img className={style.iconxs} src={Logo2} />
                                     <img className={style.iconxs} src={IconGreen} />
                                     <img className={`${style.iconxs} ${style.rot}`} src={Logo3} />
 
@@ -121,22 +121,17 @@ export const CompProjects = () => {
                             <div className={style.carouselWrapper}>
 
                                 <button onClick={() => { setIdVisible(prev => (prev - 2 + projects.length) % projects.length + 1) }}>
-                                    <div className={`flex justify-center items-center ${style.circle}`}>
-                                        <img src={IconPrev} alt="Previous" />
+                                    <div className={`flex justify-center items-center ${style.circle1}`}>
+                                        <img className={style.icon} src={IconPrev} alt="Previous" />
                                     </div>
                                 </button>
                                 <div
                                     className={style.carouselTrack}
                                     onTouchStart={handleTouchStart}
-                                    onTouchEnd={handleTouchEnd}
-                                >
-
+                                    onTouchEnd={handleTouchEnd}>
 
                                     {/* Carrousel style: only one visible */}
-                                    {/*     {
-
-                                projects.map(project => project.id === idVisible && <ProjectCard key={project.id} project={project} />)
-                            }  */}
+                                    {/*     {projects.map(project => project.id === idVisible && <ProjectCard key={project.id} project={project} />)}  */}
 
                                     {/* Carrousel style: peek with swipe for phone */}
                                     {projects.map((project) => (
@@ -158,8 +153,8 @@ export const CompProjects = () => {
                                     ))}
 
                                 </div>
-                                <button onClick={() => { setIdVisible(prev => (prev % projects.length) + 1) }} className={`flex justify-center items-center ${style.circle}`}>
-                                    <img src={IconNext} alt="Next" />
+                                <button onClick={() => { setIdVisible(prev => (prev % projects.length) + 1) }} className={`flex justify-center items-center ${style.circle2}`}>
+                                    <img className={style.icon} src={IconNext} alt="Next" />
                                 </button>
 
 

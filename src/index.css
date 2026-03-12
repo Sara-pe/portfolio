@@ -526,7 +526,7 @@ font-size: 14px;
 .menu-links {
   display: flex;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+   background-color: #0D0D0D;
   align-items: center;
   width: 100%;
     position: absolute;

@@ -74,7 +74,7 @@ align-items: center;
   border: 1px solid var(--gray);
 }
 
-.circle {
+.circle1, .circle2 {
   height: 48px;
   width: 48px;
   border-radius: 50px;
@@ -84,7 +84,9 @@ align-items: center;
 
 }
 
-.circle:hover {
+
+
+.circle1:hover, .circle2:hover {
   background-color: var(--green);
 }
 
@@ -209,6 +211,7 @@ align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 
@@ -355,12 +358,35 @@ align-items: center;
   .carouselWrapper {
     gap: 0px;
     width: 100%;
-
+position: relative;
 
   }
 
   .carouselTrack {
     min-height: auto;
+ 
+  }
+
+  .circle1, .circle2 {
+   height: 40px;
+  width: 40px;
+  }
+
+  .icon {
+    height: 16px;
+    width: auto;
+  }
+
+  .circle1 {
+    position: absolute;
+    bottom: -32px;
+    left: 16px;
+  }
+
+    .circle2 {
+    position: absolute;
+    bottom: -32px;
+    right: 16px;
   }
 
   .card {
@@ -390,9 +416,6 @@ align-items: center;
   }
 
 
-  .circle {
-    display: none;
-  }
 
   .imgWork {
     width: 100%;
