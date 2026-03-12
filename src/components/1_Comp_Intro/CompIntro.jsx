@@ -1,7 +1,7 @@
 
 import style from './CompIntro.module.css';
 import LocationIcon from '../../assets/Vector.svg';
-import imgPortrait from '../../assets/intro_img/portrait.png'
+import imgPortrait from '../../assets/intro_img/portrait3.png'
 
 
 import { Reveal } from "../ui/Reveal"
@@ -29,17 +29,17 @@ export const CompIntro = (props) => {
                     </div>
                
 
-                <Reveal>
-                    <div className='flex flex-row justify-btw items-center flex-col-md gap-20-md'>
+            
+                    <div className={style.callContainer}>
                         <div className='flex flex-row gap-8 items-center'>
                             <img className={style.icon} src={LocationIcon} alt="Icon location" />
                             <p className='gray'>Based in Brussels</p>
                         </div>
 
-                        <div className='line'></div>
+                        <div className={style.line}></div>
                         <button onClick={() => onFormVisible()} className='btn-prin'>Let's Talk</button>
                     </div>
-                    </Reveal>
+              
            
             </div>
 

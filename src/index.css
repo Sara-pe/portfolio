@@ -26,7 +26,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: black;
+  background-color: #0D0D0D;
   color: white;
 }
 
@@ -55,7 +55,7 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 h4 {
@@ -189,14 +189,15 @@ button {
 
 .btn-prin {
   font-family: 'MyFont';
+    font-weight: 500;
   display: flex;
   border-radius: 32px;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  font-size: 22px;
+  height: 52px;
+  font-size: 20px;
   letter-spacing: -1.1px;
-  width: 180px;
+  width: 148px;
   background-color: var(--green);
   color: black;
 }
@@ -207,14 +208,15 @@ button {
 
 .btn-sec {
   font-family: 'MyFont';
+   font-weight: 500;
   display: flex;
   border-radius: 32px;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  font-size: 22px;
+ height: 52px;
+   font-size: 20px;
   letter-spacing: -1.1px;
-  padding: 16px 30px;
+  padding: 16px 28px;
   border: 1px solid #FFFDFD;
   color: white;
   width: fit-content;
@@ -340,8 +342,20 @@ height: 40px;
 width: auto;
 }
 
-.copyright {
+.callActionFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
+.callActionFooter h1{
+text-align: left;
+width: fit-content;
+}
+
+.copyright {
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -361,9 +375,9 @@ color: var(--gray);
   }
 
   #root {
-    width: 100%;  /* ← Cambia esto */
+    width: 100%;  
     margin: 0 auto;
-    padding: 0 20px;  /* ← Solo el padding de 20px cada lado */
+    padding: 0 20px;  
   }
 
   .page {
@@ -399,9 +413,9 @@ color: var(--gray);
     align-items: center;
   }
 
-  .line {
+.line {
     display: none;
-  }
+}
 
   h1 {
     font-size: 40px;
@@ -550,6 +564,13 @@ opacity: 0;
 
 .email {
   font-size: 18px;
+}
+
+.callActionFooter {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 }

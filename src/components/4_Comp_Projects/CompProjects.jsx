@@ -96,7 +96,7 @@ export const CompProjects = () => {
                                 <div className={style.carrouselHeader}>
                                     <img className={style.iconxs} src={Logo1} />
                                     <img className={style.iconxs} src={IconGreen} />
-                                    <img className={style.iconxs} src={Logo2} />
+                                    <img className={style.iconxs} src={Logo2}/>
                                     <img className={style.iconxs} src={IconGreen} />
                                     <img className={`${style.iconxs} ${style.rot}`} src={Logo3} />
 

@@ -25,7 +25,7 @@ import IconClose from "./assets/close.svg"
 function App() {
 
   const [formVisible, setFormVisible] = useState(false)
-   const [navVisible, setNavVisible] = useState(false)
+  const [navVisible, setNavVisible] = useState(false)
 
   return (
     <>
@@ -34,14 +34,14 @@ function App() {
 
           <div className='flex flex-row items-center justify-start gap-16'>
             <img className="logo-nav" src={LogoIcon} alt="Logo" />
-      {/*<h4>Sara Pena</h4> */} 
+            {/*<h4>Sara Pena</h4> */}
           </div>
 
           <div className='nav-phone'>
-            <button onClick={() => setNavVisible(prev => !prev)}><img className='icon-menu' src={(navVisible === false ) ? BurguerMenu : IconClose} alt="Open Menu" /></button>
+            <button onClick={() => setNavVisible(prev => !prev)}><img className='icon-menu' src={(navVisible === false) ? BurguerMenu : IconClose} alt="Open Menu" /></button>
           </div>
 
-          <div className={(navVisible === false ) ? 'menu-none' : 'menu-links'}>
+          <div className={(navVisible === false) ? 'menu-none' : 'menu-links'}>
             <a href="#about">
               About
             </a>
@@ -59,19 +59,19 @@ function App() {
         </nav>
 
         <main className='flex flex-col gap-264 gap-140-md'>
-         
+<Reveal>
           <div id="intro"><CompIntro onFormVisible={() => setFormVisible(true)} /></div>
-         
-          <div id="about"><CompAbout /></div>  
+</Reveal>
+          <div id="about"><CompAbout /></div>
           <div id="stack"><CompStack /></div>
           <div id="projects"><CompProjects /></div>
-        
+
           {formVisible && <div><CompForm onClose={() => setFormVisible(false)} /></div>}
 
         </main>
 
         <footer className='flex flex-col gap-88 items-start-md '>
-          <div className='flex flex-row justify-btw items-center flex-col-md gap-32-md items-start-md'>
+          <div className='callActionFooter'>
             <h1>Let's Work Together</h1>
             <div className='line'></div>
             <button
@@ -137,10 +137,10 @@ function App() {
             </a>*/}
 
           </div>
-<div className='copyright'>
-<p>© 2026 Sara Pena All Rights Reserved.</p>
-   </div>    
-    </footer>
+          <div className='copyright'>
+            <p>© 2026 Made with ♡ by Sara Pena. All Rights Reserved.</p>
+          </div>
+        </footer>
       </div>
     </>
   )
