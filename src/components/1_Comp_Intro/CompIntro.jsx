@@ -1,7 +1,7 @@
 
 import style from './CompIntro.module.css';
 import LocationIcon from '../../assets/Vector.svg';
-import imgPortrait from '../../assets/intro_img/portrait3.png'
+import imgPortrait from '../../assets/intro_img/portrait2.png'
 
 
 import { Reveal } from "../ui/Reveal"

@@ -110,6 +110,7 @@ export const CompProjects = () => {
 
                                     <img className={style.iconxs} src={IconGreen} />
 
+
                                 </div></div>
                         </div>
                     </Reveal>
