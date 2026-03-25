@@ -7,6 +7,7 @@ import { Reveal } from "../ui/Reveal"
 import Logo1 from '../../assets/logos_projects/wolf.svg'
 import Logo2 from '../../assets/logos_projects/paygap.png'
 import Logo3 from '../../assets/logos_projects/logo-white.png'
+import Logo4 from '../../assets/logos_projects/artform.png'
 import IconGreen from "../../assets/lucide_dot.svg";
 
 
@@ -17,6 +18,8 @@ import IconPrev from '../../assets/left.svg'
 import WorkImage1 from "../../assets/Portfolio_images/wa.jpg";
 import WorkImage2 from "../../assets/Portfolio_images/pg.jpg";
 import WorkImage3 from "../../assets/Portfolio_images/portfolio.jpg";
+import WorkImage4 from "../../assets/Portfolio_images/artplanner.jpg";
+import WorkImage5 from "../../assets/Portfolio_images/wordpress.jpg";
 
 
 export const CompProjects = () => {
@@ -52,13 +55,39 @@ export const CompProjects = () => {
         {
             id: 3,
             title: "Portfolio",
-            description: "A portfolio website fully built in React, featuring a detailed presentation and in-depth explanation of recent projects, professional experience, and contact resources.",
-            extra: "",
+            description: "A portfolio website fully built in React, featuring a detailed presentation and in-depth explanation of recent projects, education, professional experience, and contact resources.",
+            extra: "Great attention given to responsiveness and a perfect adaptation to all kinds of devices, using 3 specific breakpoints.",
             tags: ["CSS", "HTML", "JavaScript", "React"],
             linkGit: "https://github.com/Sara-pe/portfolio",
-            linkWeb: "",
+            linkWeb: "https://portfolio-sara-pena.vercel.app/",
             video: "",
             img: WorkImage3
+
+        },
+
+          {
+            id: 4,
+            title: "Artform Planner",
+            description: "A social-driven backend featuring a secure invitation system to sync events between friends, protected by Argon2 hashing. Dual-layer security flow is implemented: Authentication middleware via JWT to verify user identity, and Authorization middleware to enforce Role-Based Access Control (RBAC) across all RESTful endpoints.",
+            extra: "Its core functionality includes a custom invitation system where friends can share and sync art events directly to their profiles.",
+            tags: ["JavaScript", "Node", "MongoDB"],
+            linkGit: "https://github.com/Sara-pe/ArtEventManager-Node",
+            linkWeb: "",
+            video: "",
+            img: WorkImage4
+
+        },
+
+          {
+            id: 5,
+            title: "WA portfolio",
+            description: "Presentation site for the Werewolves Assistant app, built on WordPress using the Kudio template and manually adjusted with custom CSS.",
+            extra: "It also integrates a React-based logic module to recreate the app's ability to assign and manage player roles in real-time.",
+            tags: ["Wordpress", "React", "CSS", "CMS"],
+            linkGit: "",
+            linkWeb: "https://idyllic-douhua-fc5123.netlify.app/",
+            video: "",
+            img: WorkImage5
 
         }
     ];
@@ -99,6 +128,8 @@ export const CompProjects = () => {
                                     <img className={style.iconxs} src={Logo2} />
                                     <img className={style.iconxs} src={IconGreen} />
                                     <img className={`${style.iconxs} ${style.rot}`} src={Logo3} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxxs} src={Logo4} />
 
                                     <img className={style.iconxs} src={IconGreen} />
 
@@ -107,6 +138,8 @@ export const CompProjects = () => {
                                     <img className={style.iconxs} src={Logo2} />
                                     <img className={style.iconxs} src={IconGreen} />
                                     <img className={style.iconxs} src={Logo3} />
+                                       <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxxs} src={Logo4} />
 
                                     <img className={style.iconxs} src={IconGreen} />
 
@@ -164,6 +197,8 @@ export const CompProjects = () => {
                                     <div className={(idVisible === 1) ? style.marked : style.gray} ></div>
                                     <div className={(idVisible === 2) ? style.marked : style.gray} ></div>
                                     <div className={(idVisible === 3) ? style.marked : style.gray} ></div>
+                                    <div className={(idVisible === 4) ? style.marked : style.gray} ></div>
+                                     <div className={(idVisible === 5) ? style.marked : style.gray} ></div>
 
                                 </div>
                             </div>

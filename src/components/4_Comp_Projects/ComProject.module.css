@@ -29,6 +29,11 @@
 
 }
 
+.iconxxs {
+  height: 12px;
+
+}
+
 .rot {
  /* transform: rotate(45deg);
   height: 20px; */
@@ -47,7 +52,7 @@
 align-items: center;
   gap: 4px;
   width: max-content;
-  animation: scroll 8s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
@@ -407,6 +412,9 @@ position: relative;
     display: none;
   }
 
+  .hidden { display: none;
+  }
+
 
 
   .carrouselHeader {
@@ -436,12 +444,9 @@ position: relative;
   }
 
 
-
   .headerVideo {
     margin-top: 32px;
   }
-
-
 
   .close {
 
