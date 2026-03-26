@@ -7,7 +7,7 @@ import { Reveal } from "../ui/Reveal"
 import Logo1 from '../../assets/logos_projects/wolf.svg'
 import Logo2 from '../../assets/logos_projects/paygap.png'
 import Logo3 from '../../assets/logos_projects/logo-white.png'
-import Logo4 from '../../assets/logos_projects/artform.png'
+import Logo4 from '../../assets/logos_projects/artform5.png'
 import IconGreen from "../../assets/lucide_dot.svg";
 
 
