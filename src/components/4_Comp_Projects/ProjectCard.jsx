@@ -20,7 +20,13 @@ export const ProjectCard = (props) => {
 
             <div className={`${style.card} flex flex-row gap-28 ${props.className || ""}`}>
                 <div className={style.contImage}>
-                    <img className={style.imgWork} src={img} alt="Image Project" />
+                    <img
+                        className={style.imgWork}
+                        src={img}
+                        onClick={() => window.open(img, '_blank')}
+                        style={{ cursor: 'zoom-in' }}
+                        alt="Image Project"
+                    />
                 </div>
                 <div className={`flex flex-col justify-start items-start gap-20 ${style.info}`}>
 
