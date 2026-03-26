@@ -68,7 +68,7 @@ export const CompProjects = () => {
           {
             id: 4,
             title: "Artform Planner",
-            description: "A mobile app featuring a custom invitation system where friends can share and add art events directly to their profiles. ",
+            description: "A mobile app where friends can share and add art events directly to their profiles. ",
             extra: "The backend includes a secure invitation system protected by Argon2 hashing. A dual-layer security flow is implemented: Authentication middleware via JWT to verify user identity, and Authorization middleware to enforce Role-Based Access Control (RBAC) across all RESTful endpoints. Front-end in development. ",
             tags: ["JavaScript", "Node", "MongoDB"],
             linkGit: "https://github.com/Sara-pe/ArtEventManager-Node",
