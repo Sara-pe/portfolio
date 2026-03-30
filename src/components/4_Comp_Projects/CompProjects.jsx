@@ -28,7 +28,7 @@ export const CompProjects = () => {
         {
             id: 1,
             title: "Werewolves Assistant",
-            description: "A game assistant that serves as a guide for the game master. It organizes the different stages of the game, helping the master follow each step correctly.",
+            description: "Inspired in the popular boardgame of Lupus in Tabula or The Werewolves of Millers Hollow, this app serves as digital assistant for the game moderator. It organizes the different stages of the game, helping the master follow each step correctly.",
             extra: "It tracks votes and eliminations, and determines the game's end and winning team. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
             tags: ["CSS", "HTML", "JavaScript"],
             linkGit: "https://github.com/Sara-pe/Werewolves_Assistant",
