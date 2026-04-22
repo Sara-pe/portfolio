@@ -68,11 +68,11 @@ export const CompProjects = () => {
           {
             id: 4,
             title: "Artform Planner",
-            description: "A mobile app where friends can share and add art events directly to their profiles. ",
-            extra: "The backend includes a secure invitation system protected by Argon2 hashing. A dual-layer security flow is implemented: Authentication middleware via JWT to verify user identity, and Authorization middleware to enforce Role-Based Access Control (RBAC) across all RESTful endpoints. Front-end in development. ",
+            description: "First prototype of a mobile app where friends can share and add art events to their profiles. Additionally, a Brussels cultural agenda module is currently in development.",
+            extra: "The backend features a secure invitation system hardened by Argon2 hashing. It utilizes a dual-layer security architecture: JWT-based Authentication and Role-Based Access Control middleware across all RESTful endpoints. ",
             tags: ["JavaScript", "Node", "MongoDB"],
             linkGit: "https://github.com/Sara-pe/ArtEventManager-Node",
-            linkWeb: "",
+            linkWeb: "https://prototype-online-front-end-art-even.vercel.app/",
             video: "",
             img: WorkImage4
 
