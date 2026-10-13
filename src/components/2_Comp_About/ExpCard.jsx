@@ -10,6 +10,21 @@ export const ExpCard = () => {
         <>
 <div className='flex flex-col gap-44'>
 
+        <div className={style.entry}>
+        <div className={style.entryHeader}>
+            <div className='flex flex-row'>
+                <h4>Frontend Developer Intern</h4>
+                <img className={style.iconxs} src={IconGreen} alt="dot" />
+                <h4 className="gray">AskNestor</h4>
+            </div>
+            <div className='line'></div>
+            <p className="gray">06/2026 – 09/2026</p>
+        </div>
+        <p className="gray">
+            Developed React/TypeScript features end to end, aligned implementation with design, and designed new screens in Figma.
+        </p>
+    </div>
+
     <div className={style.entry}>
         <div className={style.entryHeader}>
             <div className='flex flex-row'>
