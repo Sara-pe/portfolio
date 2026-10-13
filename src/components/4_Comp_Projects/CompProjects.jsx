@@ -72,7 +72,7 @@ export const CompProjects = () => {
             extra: "The backend features a secure invitation system hardened by Argon2 hashing. It utilizes a dual-layer security architecture: JWT-based Authentication and Role-Based Access Control middleware across all RESTful endpoints. ",
             tags: ["JavaScript", "Node", "MongoDB"],
             linkGit: "https://github.com/Sara-pe/ArtEventManager-Node",
-            linkWeb: "https://prototype-online-front-end-art-even.vercel.app/",
+            linkWeb: "https://prototype2-responsive-front-end-art.vercel.app/",
             video: "",
             img: WorkImage4
 
