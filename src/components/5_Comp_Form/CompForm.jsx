@@ -42,7 +42,7 @@ export const CompForm = (props) => {
             <div className={style.modalBackground}>
             <form onSubmit={handleSubmit(onSubmit)} className={style.modal}>
                   <button onClick={() => { onClose() }}><img className={style.close} src={iconClose} alt="Close" /></button> 
-                     <div className={`flex flex-col gap-16 ${style.container}`}>
+                     <div className={`flex flex-col ${style.container}`}>
                
                     <h2 className={style.header}>Let's Work Together!</h2>
                     <div className="flex flex-col gap-8">

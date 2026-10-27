@@ -4,10 +4,11 @@ import { useState } from 'react';
 
 import { Reveal } from "../ui/Reveal"
 
-import Logo1 from '../../assets/logos_projects/wolf.svg'
-import Logo2 from '../../assets/logos_projects/paygap.png'
-import Logo3 from '../../assets/logos_projects/logo-white.png'
-import Logo4 from '../../assets/logos_projects/artform5.png'
+import Logo1 from '../../assets/logos_projects/artform5.png'
+import Logo2 from '../../assets/logos_projects/nook-logo.svg'
+import Logo3 from '../../assets/logos_projects/wolf.svg'
+import Logo4 from '../../assets/logos_projects/paygap.png'
+import Logo5 from '../../assets/logos_projects/logo-gleam-white.png'
 import IconGreen from "../../assets/lucide_dot.svg";
 
 
@@ -15,11 +16,13 @@ import IconNext from '../../assets/right.svg'
 import IconPrev from '../../assets/left.svg'
 
 
-import WorkImage1 from "../../assets/Portfolio_images/wa.jpg";
-import WorkImage2 from "../../assets/Portfolio_images/pg.jpg";
-import WorkImage3 from "../../assets/Portfolio_images/portfolio.jpg";
-import WorkImage4 from "../../assets/Portfolio_images/artplanner.jpg";
-import WorkImage5 from "../../assets/Portfolio_images/wordpress.jpg";
+import WorkImage1 from "../../assets/Portfolio_images/wa-n.jpg";
+import WorkImage2 from "../../assets/Portfolio_images/pg-n.jpg";
+import WorkImage3 from "../../assets/Portfolio_images/portfolio-n.jpg";
+import WorkImage4 from "../../assets/Portfolio_images/artplanner-n.jpg";
+import WorkImage5 from "../../assets/Portfolio_images/wordpress-n.png";
+import WorkImage6 from "../../assets/Portfolio_images/gleam.png";
+import WorkImage7 from "../../assets/Portfolio_images/nook-3.jpg";
 
 
 export const CompProjects = () => {
@@ -27,28 +30,27 @@ export const CompProjects = () => {
     const projects = [
         {
             id: 1,
-            title: "Werewolves Assistant",
-            description: "Inspired in the popular boardgame of Lupus in Tabula or The Werewolves of Millers Hollow, this app serves as digital assistant for the game moderator. It organizes the different stages of the game, helping the master follow each step correctly.",
-            extra: "It tracks votes and eliminations, and determines the game's end and winning team. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
-            tags: ["CSS", "HTML", "JavaScript"],
-            linkGit: "https://github.com/Sara-pe/Werewolves_Assistant",
-            linkWeb: "https://werewolves-assistant.vercel.app/",
-            video: "https://player.vimeo.com/video/1165636672?badge=0&autopause=0&player_id=0&app_id=58479",
-            img: WorkImage1
-
+            title: "Artform Planner",
+            description: "ARTFORM is a desktop and mobile app where you can add friends, share cultural events with them, and save the ones you like to your profile. It also includes a Brussels cultural agenda with personalized recommendations.",
+            extra: "The backend features a secure invitation system hardened by Argon2 hashing. It utilizes a dual-layer security architecture: JWT-based Authentication and Role-Based Access Control middleware across all RESTful endpoints. ",
+            tags: ["JavaScript", "Node", "MongoDB"],
+            linkGit: "https://github.com/Sara-pe/ArtEventManager-Node",
+            linkWeb: "https://prototype2-responsive-front-end-art.vercel.app/",
+            video: "",
+            img: WorkImage4
 
         },
 
         {
             id: 2,
-            title: "PayGap",
-            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes, Belgique). Group project as part of a one-week hackathon.",
-            extra: "The platform helps women understand what they should be earning and tackle the 20% gender pay gap. It also includes a step-by-step guide on how to request a raise, plus additional resources.",
-            tags: ["CSS", "HTML", "JavaScript"],
-            linkGit: "https://github.com/sahardel92/PayGapHackathon",
-            linkWeb: "",
-            video: "https://player.vimeo.com/video/1168124943?badge=0&autopause=0&player_id=0&app_id=58479",
-            img: WorkImage2
+            title: "Nook by AskNestor",
+            description: "Nook is an all-in-one platform that helps receptionist teams run office buildings, bringing visitor management, room bookings, tenant communication and supplier interactions into one place.",
+            extra: "During my internship as a Front-End Developer & UX/UI Designer, I refined and extended existing components. I also designed and built three new features: Modules, Deliveries and the Help Center.",
+            tags: ["TypeScript", "React", "Figma"],
+            linkGit: "",
+            linkWeb: "https://www.getnook.eu",
+            video: "",
+            img: WorkImage7
 
         },
 
@@ -65,20 +67,21 @@ export const CompProjects = () => {
 
         },
 
-          {
+        {
             id: 4,
-            title: "Artform Planner",
-            description: "ARTFORM is a desktop and mobile app where you can add friends, share cultural events with them, and save the ones you like to your profile. It also includes a Brussels cultural agenda with personalized recommendations.",
-            extra: "The backend features a secure invitation system hardened by Argon2 hashing. It utilizes a dual-layer security architecture: JWT-based Authentication and Role-Based Access Control middleware across all RESTful endpoints. ",
-            tags: ["JavaScript", "Node", "MongoDB"],
-            linkGit: "https://github.com/Sara-pe/ArtEventManager-Node",
-            linkWeb: "https://prototype2-responsive-front-end-art.vercel.app/",
-            video: "",
-            img: WorkImage4
+            title: "Werewolves Assistant",
+            description: "Inspired in the popular boardgame of Lupus in Tabula or The Werewolves of Millers Hollow, this app serves as digital assistant for the game moderator. It organizes the different stages of the game, helping the master follow each step correctly.",
+            extra: "It tracks votes and eliminations, and determines the game's end and winning team. It also includes a small help chatbot where the game master can ask questions and receive guidance.",
+            tags: ["CSS", "HTML", "JavaScript"],
+            linkGit: "https://github.com/Sara-pe/Werewolves_Assistant",
+            linkWeb: "https://werewolves-assistant.vercel.app/",
+            video: "https://player.vimeo.com/video/1165636672?badge=0&autopause=0&player_id=0&app_id=58479",
+            img: WorkImage1
+
 
         },
 
-          {
+        {
             id: 5,
             title: "WA portfolio",
             description: "Presentation site for the Werewolves Assistant app, built on WordPress using the Kudio template and manually adjusted with custom CSS.",
@@ -88,6 +91,32 @@ export const CompProjects = () => {
             linkWeb: "https://idyllic-douhua-fc5123.netlify.app/",
             video: "",
             img: WorkImage5
+
+        },
+
+        {
+            id: 6,
+            title: "PayGap",
+            description: "Salary comparison tool based on profession and experience. Data from L’écart salarial 2024 (Institut pour l’égalité des femmes et des hommes, Belgique). Group project as part of a one-week hackathon.",
+            extra: "The platform helps women understand what they should be earning and tackle the 20% gender pay gap. It also includes a step-by-step guide on how to request a raise, plus additional resources.",
+            tags: ["CSS", "HTML", "JavaScript"],
+            linkGit: "https://github.com/sahardel92/PayGapHackathon",
+            linkWeb: "",
+            video: "https://player.vimeo.com/video/1168124943?badge=0&autopause=0&player_id=0&app_id=58479",
+            img: WorkImage2
+
+        },
+
+        {
+            id: 7,
+            title: "Gleam Gallery",
+            description: "Graphic and UI design for an online art gallery. I designed website screens, working closely with the developer.",
+            extra: "I also created visuals across print and digital: Instagram posts, artwork catalogues, cards, and other digital and printed material.",
+            tags: ["UI Design", "Graphic Design", "Photoshop", "Illustrator"],
+            linkGit: "",
+            linkWeb: "https://gleam.gallery/",
+            video: "",
+            img: WorkImage6
 
         }
     ];
@@ -123,23 +152,27 @@ export const CompProjects = () => {
                             <div className='line'></div>
                             <div className={style.iconWrapper}>
                                 <div className={style.carrouselHeader}>
-                                    <img className={style.iconxs} src={Logo1} />
+                                    <img className={style.iconxxs} src={Logo1} />
                                     <img className={style.iconxs} src={IconGreen} />
-                                    <img className={style.iconxs} src={Logo2} />
-                                    <img className={style.iconxs} src={IconGreen} />
-                                    <img className={`${style.iconxs} ${style.rot}`} src={Logo3} />
-                                    <img className={style.iconxs} src={IconGreen} />
-                                    <img className={style.iconxxs} src={Logo4} />
-
-                                    <img className={style.iconxs} src={IconGreen} />
-
-                                    <img className={style.iconxs} src={Logo1} />
-                                    <img className={style.iconxs} src={IconGreen} />
-                                    <img className={style.iconxs} src={Logo2} />
+                                    <img className={style.iconNook} src={Logo2} />
                                     <img className={style.iconxs} src={IconGreen} />
                                     <img className={style.iconxs} src={Logo3} />
-                                       <img className={style.iconxs} src={IconGreen} />
-                                    <img className={style.iconxxs} src={Logo4} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo4} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={`${style.iconxs} ${style.rot}`} src={Logo5} />
+
+                                    <img className={style.iconxs} src={IconGreen} />
+
+                                    <img className={style.iconxxs} src={Logo1} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconNook} src={Logo2} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo3} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo4} />
+                                    <img className={style.iconxs} src={IconGreen} />
+                                    <img className={style.iconxs} src={Logo5} />
 
                                     <img className={style.iconxs} src={IconGreen} />
 
@@ -198,7 +231,9 @@ export const CompProjects = () => {
                                     <div className={(idVisible === 2) ? style.marked : style.gray} ></div>
                                     <div className={(idVisible === 3) ? style.marked : style.gray} ></div>
                                     <div className={(idVisible === 4) ? style.marked : style.gray} ></div>
-                                     <div className={(idVisible === 5) ? style.marked : style.gray} ></div>
+                                    <div className={(idVisible === 5) ? style.marked : style.gray} ></div>
+                                    <div className={(idVisible === 6) ? style.marked : style.gray} ></div>
+                                    <div className={(idVisible === 7) ? style.marked : style.gray} ></div>
 
                                 </div>
                             </div>

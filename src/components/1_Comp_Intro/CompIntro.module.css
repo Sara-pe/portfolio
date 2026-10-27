@@ -8,14 +8,33 @@
     height: 100%;
     width: 100%;
     flex-direction: row;
-    gap: 88px
+    gap: 88px;
+    justify-content: space-between;
 }
 
 .textbox {
     width: 100%;
-    max-width: 552px;
+    max-width: 600px;
     order: 1;
     gap: 8px;
+    flex: 1.1;
+}
+
+.introSmall {
+    font-size: 24px;
+    color: var(--gray);
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.introTitle {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    color: white;
+    padding: 4px 0;
 }
 
 
@@ -80,36 +99,49 @@
 }
 
 .portrait {
-    height: 280px;
-    width: auto;
+    height: auto;
+    width: 328px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-
 .containerPortrait {
-    width: 280px;
-    height: 280px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 0.9;
     border-radius: 300px;
     order: 2;
     animation: fadeIn 1s ease-out forwards;
+    min-width: 400px;
+    opacity: 0.9;
 }
 
-    .callContainer{
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: space-between;
- width: 100%;
+.bgPortrait {
+    background-color: rgba(183, 185, 205, 0.8);
+    width: 100%;
+    border-radius: 34px;
+    height: 288px;
+    position: relative;
+}
+
+.callContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
 
-    .line {
-     height: 0.5px;
-  background-color: var(--gray);
-  flex: 0.96;
+.line {
+    height: 0.5px;
+    background-color: var(--gray);
+    flex: 0.96;
 }
 
 
@@ -123,21 +155,40 @@
         text-align: center;
     }
 
+    .container {
+        gap: 56px;
+    }
+
     .intro {
         width: 100%;
         flex-direction: column;
-        gap: 28px
+        gap: 48px;
+        justify-content: center;
+        padding-top: 48px;
+        padding-bottom: 32px;
     }
 
     .portrait {
-        width: 140px;
+        width: 240px;
         height: auto;
     }
 
     .containerPortrait {
-        width: 140px;
-        height: 140px;
         order: 1;
+        width: 100%;
+        padding-top: 40px;
+
+    }
+
+
+    .bgPortrait {
+        height: 216px;
+        width: 320px;
+    }
+
+    .introTitle {
+        font-size: 40px;
+        line-height: 52px;
     }
 
     .textbox {
@@ -160,27 +211,44 @@
         width: 100%;
         height: auto;
         gap: 40px;
-        padding: 80px 0px;
+        padding: 20px 0px;
     }
 
     .tag {
         display: none;
     }
 
-.line {
-    display: none;
-}
+    .line {
+        display: none;
+    }
 
-     .callContainer{ 
+    .callContainer {
         flex-direction: column;
         justify-content: center;
         gap: 16px;
-     }
+    }
 
     .intro {
         max-width: 400px;
+        gap: 60px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .containerPortrait {
+        width: calc(100vw - 40px);
+        min-width: 0;
+        max-width: none;
+        border-radius: 20px;
     }
 
 
+    .portrait {
+        width: 192px;
+    }
+
+    .bgPortrait {
+        height: 176px;
+    }
 
 }

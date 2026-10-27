@@ -34,6 +34,10 @@
 
 }
 
+.iconNook {
+  height: 15px;
+}
+
 .rot {
  /* transform: rotate(45deg);
   height: 20px; */
@@ -52,7 +56,7 @@
 align-items: center;
   gap: 4px;
   width: max-content;
-  animation: scroll 10s linear infinite;
+  animation: scroll 16s linear infinite;
 }
 
 @keyframes scroll {
@@ -187,7 +191,7 @@ align-items: center;
 }
 
 .text {
-  color: gray;
+  color: var(--gray);
   max-width: 360px;
 
 }
@@ -276,7 +280,7 @@ align-items: center;
   align-items: center;
 
   background-color: rgb(66, 66, 66);
-  width: 72px;
+  padding: 0 10px;
   height: 28px;
   border-radius: 20px;
 }

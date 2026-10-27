@@ -33,8 +33,8 @@ function App() {
         <nav>
 
           <div className='flex flex-row items-center justify-start gap-16'>
-            <img className="logo-nav" src={LogoIcon} alt="Logo" />
-            {/*<h4>Sara Pena</h4> */}
+           
+            <p className='logo'>S</p>
           </div>
 
           <div className='nav-phone'>

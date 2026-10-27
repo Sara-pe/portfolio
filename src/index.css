@@ -7,8 +7,22 @@
 
 @font-face {
   font-family: 'MyFont';
+  src: url('./assets/font/Halenoir-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
   src: url('./assets/font/Halenoir-Regular.otf') format('opentype');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/font/Halenoir-SemiBold.otf') format('opentype');
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -26,7 +40,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #0D0D0D;
+  background-color: #202230;
   color: white;
 }
 
@@ -77,12 +91,30 @@ p {
 
 :root {
   --green: #83FE42;
-  --gray: #979797;
-  --darkGray: #212121;
+  --gray: #B7B9CD;
+  --darkGray: #3D4055;
 }
 
 .green {
   color: var(--green);
+}
+
+.logo {
+  transform: rotate(35deg);
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: -1.1px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 40px;
+  }
 }
 
 .gray {
@@ -199,7 +231,7 @@ button {
   letter-spacing: -1.1px;
   width: 148px;
   background-color: var(--green);
-  color: black;
+  color: #202230;
 }
 
 .btn-prin:hover {
@@ -230,7 +262,7 @@ button {
 .btn-contact {
   padding: 16px 30px;
   border-radius: 32px;
-  background-color: var(--gray);
+  background-color: #AEAFBD;
   color: white;
   font-size: 16px;
   height: 48px;
@@ -527,7 +559,7 @@ font-size: 14px;
 .menu-links {
   display: flex;
   flex-direction: column;
-   background-color: #0D0D0D;
+   background-color: #202230;
   align-items: center;
   width: 100%;
     position: absolute;
