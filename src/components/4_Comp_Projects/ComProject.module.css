@@ -54,9 +54,13 @@
   display: flex;
   flex-direction: row;
 align-items: center;
-  gap: 4px;
   width: max-content;
   animation: scroll 16s linear infinite;
+}
+
+/* margin instead of gap so both halves are the same width and the loop doesn't jump */
+.carrouselHeader > * {
+  margin-right: 4px;
 }
 
 @keyframes scroll {

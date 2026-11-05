@@ -3,9 +3,25 @@
     background: var(--darkGray);
 }
 
+.iconTailwind {
+    height: 30px;
+}
+
+/* keeps smaller icons in a 48px box so the labels stay aligned */
+.iconBox {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .iconxs {
     height: 24px;
-   
+
+}
+
+.iconTailwindXs {
+    height: 16px;
 }
 
 .iconcontainer {
@@ -29,9 +45,14 @@ mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transpa
 
 .carrouselStack {
   display: flex;
-  gap: 4px;
+  align-items: center;
   width: max-content;
-  animation: scroll 28s linear infinite;
+  animation: scroll 32s linear infinite;
+}
+
+/* margin instead of gap so both halves are the same width and the loop doesn't jump */
+.carrouselStack > * {
+  margin-right: 4px;
 }
 
 @keyframes scroll {
