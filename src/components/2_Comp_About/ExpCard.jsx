@@ -13,7 +13,9 @@ export const ExpCard = () => {
         <div className={style.entry}>
         <div className={style.entryHeader}>
             <div className='flex flex-row'>
-                <h4>Frontend Developer & UX/UI Desginer Intern</h4>
+                <h4 className={style.splitTitle}>
+                    <span>Frontend Developer &</span> <span>UX/UI Designer Intern</span>
+                </h4>
                 <img className={style.iconxs} src={IconGreen} alt="dot" />
                 <h4 className="gray">AskNestor</h4>
             </div>

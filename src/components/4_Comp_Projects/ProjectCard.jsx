@@ -31,7 +31,7 @@ export const ProjectCard = (props) => {
                 <div className={`flex flex-col justify-start items-start gap-20 ${style.info}`}>
 
                     <h2>{title}</h2>
-                    <p className={style.text}>{description} <br /> {extra}</p>
+                    <p className={style.text}>{description} {!isMobile && <><br /> {extra}</>}</p>
 
                     <div className={`flex flex-row flex-wrap gap-8 justify-start ${style.tags}`}>
 

@@ -283,7 +283,7 @@ align-items: center;
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(66, 66, 66);
+  background-color: #343749;
   padding: 0 10px;
   height: 28px;
   border-radius: 20px;
@@ -307,12 +307,24 @@ align-items: center;
 
 
 
+/* Medium desktop: give the text more room than the image (1:1.4) */
+@media (min-width: 990px) and (max-width: 1137px) {
+  .contImage {
+    flex: 1;
+  }
+
+  .info {
+    flex: 1.4;
+  }
+}
+
+
 /* -----------------------------------------*/
 /* -------Responsive Phone version----------*/
 /* -----------------------------------------*/
 
 
-@media (max-width: 969px) {
+@media (max-width: 989px) {
   .card {
     flex-direction: column;
     min-height: 880px;
@@ -364,6 +376,10 @@ align-items: center;
     height: auto;
   }
 
+  .text {
+    min-height: 96px;
+  }
+
   .info {
     overflow-x: hidden;
   }
@@ -408,7 +424,7 @@ position: relative;
     transform: none;
     opacity: 1;
     overflow: hidden;
-    min-height: 664px;
+    min-height: auto;
     padding: 20px;
   }
 

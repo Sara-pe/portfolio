@@ -26,6 +26,11 @@
 
 }
 
+/* override the global `span { color: gray }` rule in CompForm.module.css */
+.splitTitle span {
+    color: inherit;
+}
+
 .green {
     color: var(--darkGray);
  border-radius: 16px;
@@ -102,6 +107,15 @@ transform: translateX(0%);
 
  .iconxs {
     height: 16px;
+}
+
+/* Shrink the box to the wider of the two lines so no empty gap sits before the dot */
+.splitTitle {
+    width: min-content;
+}
+
+.splitTitle span {
+    white-space: nowrap;
 }
 
 
