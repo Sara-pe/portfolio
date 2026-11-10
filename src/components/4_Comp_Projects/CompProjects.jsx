@@ -21,7 +21,7 @@ import WorkImage2 from "../../assets/Portfolio_images/pg-n.jpg";
 import WorkImage3 from "../../assets/Portfolio_images/portfolio-n.jpg";
 import WorkImage4 from "../../assets/Portfolio_images/artplanner-n.jpg";
 import WorkImage5 from "../../assets/Portfolio_images/wordpress-n.png";
-import WorkImage6 from "../../assets/Portfolio_images/gleam.png";
+import WorkImage6 from "../../assets/Portfolio_images/gleam.jpg";
 import WorkImage7 from "../../assets/Portfolio_images/nook-3.jpg";
 
 
