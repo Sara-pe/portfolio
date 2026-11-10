@@ -110,8 +110,8 @@ export const CompProjects = () => {
         {
             id: 7,
             title: "Gleam Gallery",
-            description: "Graphic and UI design for an online art gallery. I designed the website's interface and worked closely with the developer to bring it to life. I also created visuals across print and digital such as Instagram posts, artwork brochures and the company cards.",
-            extra: "I worked mainly across Photoshop, Illustrator, InDesign and Adobe XD.",
+            description: "Graphic and UI design for an online art gallery. I designed the website's interface and worked closely with the developer to bring it to life. I also created visuals across print and digital.",
+            extra: "Among them were Instagram posts, artwork brochures and business cards, made mainly in Photoshop, Illustrator, InDesign and Adobe XD.",
             tags: ["UI Design", "Graphic Design"],
             linkGit: "",
             linkWeb: "https://gleam.gallery/",
