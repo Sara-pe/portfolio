@@ -70,7 +70,7 @@ function App() {
 
         </main>
 
-        <footer className='flex flex-col gap-88 items-start-md '>
+        <footer className='flex flex-col gap-88 items-center-md '>
           <div className='callActionFooter'>
             <h1>Let's Work Together</h1>
             <div className='line'></div>
@@ -78,7 +78,7 @@ function App() {
               onClick={() => setFormVisible(true)} className='btn-prin'>Let's Talk</button>
           </div>
 
-          <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md items-start-md gap-32-md'>
+          <div className='flex flex-row justify-btw items-center flex-col-md gap-8-md items-center-md gap-32-md'>
             <div className='flex flex-row justify-start items-center items-start-md '>
               <a href="https://github.com/Sara-pe">
 
